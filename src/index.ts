@@ -1,5 +1,5 @@
 import { App } from 'vue'
-import ElDesignForm from './core/element/ElDesignForm.vue'
+import ElDesignForm from './core/element/el-design-form.vue'
 import 'virtual:svg-icons-register'
 import './styles/index.css'
 

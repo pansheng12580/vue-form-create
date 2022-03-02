@@ -4,7 +4,7 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
-    ComponentsGroup: typeof import('./src/components/ComponentsGroup.vue')['default']
+    ComponentsGroup: typeof import('./src/components/components-group.vue')['default']
     CustomHeader: typeof import('./src/components/CustomHeader.vue')['default']
     ElAside: typeof import('element-plus/es')['ElAside']
     ElButton: typeof import('element-plus/es')['ElButton']
@@ -12,7 +12,7 @@ declare module 'vue' {
     ElHeader: typeof import('element-plus/es')['ElHeader']
     ElSpace: typeof import('element-plus/es')['ElSpace']
     Header: typeof import('./src/components/Header.vue')['default']
-    SvgIcon: typeof import('./src/components/SvgIcon.vue')['default']
+    SvgIcon: typeof import('./src/components/svg-icon.vue')['default']
   }
 }
 

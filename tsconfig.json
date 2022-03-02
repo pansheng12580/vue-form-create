@@ -14,7 +14,7 @@
     "paths": {
       "@/*": ["src/*"]
     },
-    "types": ["element-plus/global"]
+    "types": ["element-plus/global", "unplugin-vue-define-options"]
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "example/env.d.ts", "example/main.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]

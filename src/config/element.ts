@@ -12,11 +12,11 @@ const basicComponents: Component[] = [
   }
 ]
 
-const componentsGroup: ComponentGroup[] = [
+const elementComponentsGroup: ComponentGroup[] = [
   {
     title: '基础组件',
     components: basicComponents
   }
 ]
 
-export default componentsGroup
+export default elementComponentsGroup

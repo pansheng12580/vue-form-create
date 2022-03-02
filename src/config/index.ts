@@ -17,4 +17,4 @@ export type ComponentGroup = {
   components: Component[]
 }
 
-export * from './element'
+export { default as elementComponentsGroup } from './element'
