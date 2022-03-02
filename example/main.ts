@@ -1,3 +1,4 @@
 import { createApp, h } from 'vue'
+import DesignForm, { ElDesignForm } from '@/index'
 
-createApp(h('div')).mount('#app')
+createApp(h(ElDesignForm)).use(DesignForm).mount('#app')
