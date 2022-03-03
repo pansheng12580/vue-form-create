@@ -7,8 +7,21 @@ const basicComponents: Component[] = [
     type: 'Button',
     customClass: '{}',
     dynamicProps: '{}',
-    events: {},
-    config: {}
+    events: {
+      click: 'function click(event, formInstance, state) {}'
+    },
+    config: {
+      size: undefined,
+      type: undefined,
+      plain: false,
+      round: false,
+      circle: false,
+      loading: false,
+      disabled: false,
+      autofocus: false,
+      nativeType: 'button',
+      autoInsertSpace: undefined
+    }
   }
 ]
 

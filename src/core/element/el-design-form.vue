@@ -1,47 +1,41 @@
 <template>
-  <div class="h-full">
-    <el-container class="h-full bg-white">
-      <el-aside class="overflow-auto" width="250px">
-        <div class="w-full h-full py-2 px-0">
+  <div class="fc-style">
+    <el-container class="fc-container">
+      <el-aside width="250px" style="overflow: auto">
+        <div class="components">
           <components-group v-for="components of elementComponentsGroup" :key="components.title" :componentGroup="components" />
         </div>
       </el-aside>
-      <el-container class="border-l-[1px] border-r-[1px] border-[#e0e0e0]">
-        <el-header class="h-11 leading-[44px] text-sm text-right bg-white border-b-2 border-[#e4e7ed] text-[#409eff]">
-          <el-space>
-            <a class="flex items-center cursor-pointer">
-              <svg-icon name="Upload" class="w-4 h-4 mr-[5px]" />
-              导入JSON
-            </a>
-            <a class="flex items-center cursor-pointer">
-              <svg-icon name="Delete" class="w-4 h-4 mr-[5px]" />
-              清空
-            </a>
-            <a class="flex items-center cursor-pointer">
-              <svg-icon name="Preview" class="w-4 h-4 mr-[5px]" />
-              预览
-            </a>
-            <a class="flex items-center cursor-pointer">
-              <svg-icon name="GenerateJson" class="w-4 h-4 mr-[5px]" />
-              生成JSON
-            </a>
-            <a class="flex items-center cursor-pointer">
-              <svg-icon name="GenerateCode" class="w-4 h-4 mr-[5px]" />
-              生成代码
-            </a>
-          </el-space>
+      <el-container class="center-container">
+        <el-header class="btn-bar">
+          <CustomHeader />
         </el-header>
+        <el-main class="widget-empty">
+          <el-widget-form />
+        </el-main>
       </el-container>
+      <el-aside class="widget-config-container" width="300px">
+        <el-container>
+          <el-header>
+            <div class="config-tab" :class="{ active: currentTab === 'Local' }" @click="currentTab = 'Local'">字段设置</div>
+            <div class="config-tab" :class="{ active: currentTab === 'Global' }" @click="currentTab = 'Global'">全局设置</div>
+          </el-header>
+        </el-container>
+      </el-aside>
     </el-container>
   </div>
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue'
 import { elementComponentsGroup } from '@/config'
 import ComponentsGroup from '@/components/components-group.vue'
-import SvgIcon from '@/components/svg-icon.vue'
+import CustomHeader from '@/components/custom-header.vue'
+import ElWidgetForm from './el-widget-form.vue'
 
 defineOptions({
   name: 'ElDesignForm'
 })
+
+const currentTab = ref<'Local' | 'Global'>('Global')
 </script>

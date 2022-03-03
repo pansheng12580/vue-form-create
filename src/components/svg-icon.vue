@@ -1,11 +1,11 @@
 <template>
-  <svg aria-hidden="true" class="fill-current svg-icon" :class="props.className" :style="{ color: props.color }" v-on="$attrs">
+  <svg aria-hidden="true" class="svg-icon" :class="props.className" :style="{ color: props.color }" v-on="$attrs">
     <use :xlink:href="symbolId" />
   </svg>
 </template>
 
 <script setup lang="ts">
-import { computed, defineProps, withDefaults } from 'vue'
+import { computed } from 'vue'
 
 defineOptions({
   name: 'SvgIcon'

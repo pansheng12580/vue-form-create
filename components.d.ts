@@ -5,13 +5,17 @@
 declare module 'vue' {
   export interface GlobalComponents {
     ComponentsGroup: typeof import('./src/components/components-group.vue')['default']
-    CustomHeader: typeof import('./src/components/CustomHeader.vue')['default']
+    CustomHeader: typeof import('./src/components/custom-header.vue')['default']
     ElAside: typeof import('element-plus/es')['ElAside']
     ElButton: typeof import('element-plus/es')['ElButton']
     ElContainer: typeof import('element-plus/es')['ElContainer']
+    ElForm: typeof import('element-plus/es')['ElForm']
     ElHeader: typeof import('element-plus/es')['ElHeader']
+    ElMain: typeof import('element-plus/es')['ElMain']
+    ElSlider: typeof import('element-plus/es')['ElSlider']
     ElSpace: typeof import('element-plus/es')['ElSpace']
-    Header: typeof import('./src/components/Header.vue')['default']
+    ElWidgetFormItem: typeof import('element-plus/es')['ElWidgetFormItem']
+    Header: typeof import('./src/components/header.vue')['default']
     SvgIcon: typeof import('./src/components/svg-icon.vue')['default']
   }
 }
