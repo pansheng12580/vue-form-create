@@ -8,7 +8,7 @@
       </el-aside>
       <el-container class="center-container">
         <el-header class="btn-bar">
-          <CustomHeader />
+          <custom-header />
         </el-header>
         <el-main class="widget-empty">
           <el-widget-form />
@@ -20,6 +20,10 @@
             <div class="config-tab" :class="{ active: currentTab === 'Local' }" @click="currentTab = 'Local'">字段设置</div>
             <div class="config-tab" :class="{ active: currentTab === 'Global' }" @click="currentTab = 'Global'">全局设置</div>
           </el-header>
+          <el-main class="config-content">
+            <el-widget-config v-if="currentTab === 'Local'" />
+            <el-global-config v-else />
+          </el-main>
         </el-container>
       </el-aside>
     </el-container>
@@ -32,6 +36,8 @@ import { elementComponentsGroup } from '@/config'
 import ComponentsGroup from '@/components/components-group.vue'
 import CustomHeader from '@/components/custom-header.vue'
 import ElWidgetForm from './el-widget-form.vue'
+import ElWidgetConfig from './el-widget-config.vue'
+import ElGlobalConfig from './el-global-config.vue'
 
 defineOptions({
   name: 'ElDesignForm'

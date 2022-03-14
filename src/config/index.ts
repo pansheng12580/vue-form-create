@@ -2,7 +2,8 @@ export type Component = {
   key?: string
   label: string
   type: string
-  customClass?: string
+  customClass: string
+  customStyle: string
   dynamicProps?: string
   dynamicFormItemProps?: string
   events?: Record<string, string>

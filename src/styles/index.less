@@ -301,6 +301,13 @@ body {
         overflow: auto;
         background-color: #fff;
 
+        .block-button,
+        .el-select,
+        .el-dropdown,
+        .el-dropdown--default {
+          width: 100%;
+        }
+
         .option-item {
           display: flex;
           align-items: center;
@@ -359,12 +366,14 @@ body {
           }
         }
 
-        .ant-form-item {
+        .ant-form-item,
+        .el-form-item {
           padding-bottom: 10px;
           border-bottom: 1px solid #e1e1e1;
         }
 
-        .ant-form-item-label {
+        .ant-form-item-label,
+        .el-form-item__label {
           font-weight: 500;
         }
       }

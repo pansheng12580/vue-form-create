@@ -24,6 +24,7 @@ specifiers:
   less: ^4.1.2
   lint-staged: ^12.3.4
   lodash-es: ^4.17.21
+  monaco-editor: ^0.32.1
   postcss: ^8.4.7
   prettier: ^2.5.1
   stylelint: ^14.5.3
@@ -71,6 +72,7 @@ devDependencies:
   husky: 7.0.4
   less: 4.1.2
   lint-staged: 12.3.4
+  monaco-editor: 0.32.1
   postcss: 8.4.7
   prettier: 2.5.1
   stylelint: 14.5.3
@@ -3897,6 +3899,10 @@ packages:
     hasBin: true
     dependencies:
       minimist: 1.2.5
+    dev: true
+
+  /monaco-editor/0.32.1:
+    resolution: {integrity: sha512-LUt2wsUvQmEi2tfTOK+tjAPvt7eQ+K5C4rZPr6SeuyzjAuAHrIvlUloTcOiGjZW3fn3a/jFQCONrEJbNOaCqbA==}
     dev: true
 
   /ms/2.0.0:

@@ -6,11 +6,14 @@ const basicComponents: Component[] = [
     label: '按钮',
     type: 'Button',
     customClass: '{}',
+    customStyle: '{}',
     dynamicProps: '{}',
     events: {
       click: 'function click(event, formInstance, state) {}'
     },
     config: {
+      content: '按钮',
+      hidden: false,
       size: undefined,
       type: undefined,
       plain: false,
