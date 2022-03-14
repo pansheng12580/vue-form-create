@@ -9,6 +9,7 @@ declare module 'vue' {
     ElAside: typeof import('element-plus/es')['ElAside']
     ElButton: typeof import('element-plus/es')['ElButton']
     ElClassEditorDialog: typeof import('element-plus/es')['ElClassEditorDialog']
+    ElColorPicker: typeof import('element-plus/es')['ElColorPicker']
     ElContainer: typeof import('element-plus/es')['ElContainer']
     ElDialog: typeof import('element-plus/es')['ElDialog']
     ElDropdown: typeof import('element-plus/es')['ElDropdown']
@@ -18,6 +19,7 @@ declare module 'vue' {
     ElFormItem: typeof import('element-plus/es')['ElFormItem']
     ElHeader: typeof import('element-plus/es')['ElHeader']
     ElInput: typeof import('element-plus/es')['ElInput']
+    ElInputNumber: typeof import('element-plus/es')['ElInputNumber']
     ElMain: typeof import('element-plus/es')['ElMain']
     ElOption: typeof import('element-plus/es')['ElOption']
     ElRadioButton: typeof import('element-plus/es')['ElRadioButton']
@@ -29,6 +31,7 @@ declare module 'vue' {
     ElSwitch: typeof import('element-plus/es')['ElSwitch']
     ElWidgetFormItem: typeof import('element-plus/es')['ElWidgetFormItem']
     Header: typeof import('./src/components/header.vue')['default']
+    Icon: typeof import('./src/components/icon.vue')['default']
     MonacoEditor: typeof import('./src/components/monaco-editor.vue')['default']
     SvgIcon: typeof import('./src/components/svg-icon.vue')['default']
   }

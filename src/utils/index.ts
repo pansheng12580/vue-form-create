@@ -56,6 +56,19 @@ export const loadStyle = (styleText: string | undefined, state: Record<string, a
   return styleObj
 }
 
+// 加载js链接
+export const loadJsLink = (src?: string) => {
+  if (!src) return
+  const id = 'customScript'
+
+  removeDomNode(`#${id}`)
+
+  const script = document.createElement('script')
+  script.id = id
+  script.src = src
+  document.getElementsByTagName('head')[0].appendChild(script)
+}
+
 // 加载props
 export const loadProps = (propsText: string | undefined, formInstance: any, state: Record<string, any>) => {
   let props = {}

@@ -25,6 +25,22 @@ const basicComponents: Component[] = [
       nativeType: 'button',
       autoInsertSpace: undefined
     }
+  },
+  {
+    label: '图标',
+    type: 'Icon',
+    customClass: '{}',
+    customStyle: '{}',
+    dynamicProps: '{}',
+    events: {
+      click: 'function click(event, formInstance, state) {}'
+    },
+    config: {
+      name: '',
+      size: 30,
+      color: '',
+      hidden: false
+    }
   }
 ]
 

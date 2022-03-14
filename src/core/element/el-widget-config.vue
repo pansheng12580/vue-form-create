@@ -6,6 +6,8 @@
 
     <el-button-config v-if="state.selectWidgetItem?.type === 'Button'" />
 
+    <el-icon-config v-if="state.selectWidgetItem?.type === 'Icon'" />
+
     <el-form-item v-if="state.selectWidgetItem" label="自定义Class">
       <el-button class="block-button" @click="classEditorDialogVisible = true">设置</el-button>
     </el-form-item>
@@ -49,6 +51,7 @@
 <script lang="ts" setup>
 import { computed, ref } from 'vue'
 import ElButtonConfig from '@/config/element/el-button-config.vue'
+import ElIconConfig from '@/config/element/el-icon-config.vue'
 import ElClassEditorDialog from './el-class-editor-dialog.vue'
 import ElStyleEditorDialog from './el-style-editor-dialog.vue'
 import ElPropsEditorDialog from './el-props-editor-dialog.vue'

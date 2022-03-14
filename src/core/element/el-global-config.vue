@@ -16,6 +16,10 @@
       <el-input v-model="state.formConfig.labelSuffix" placeholder="请输入标签后缀" />
     </el-form-item>
 
+    <el-form-item label="Icon地址">
+      <el-input v-model="state.iconSrc" placeholder="Iconfont Symbol" @blur="(event: any) => loadJsLink(event.target.value)" />
+    </el-form-item>
+
     <el-form-item label="组件尺寸">
       <el-radio-group v-model="state.formConfig.size">
         <el-radio-button label="large">大</el-radio-button>
@@ -78,6 +82,7 @@ import ElClassEditorDialog from './el-class-editor-dialog.vue'
 import ElStyleEditorDialog from './el-style-editor-dialog.vue'
 import ElStateEditorDialog from './el-state-editor-dialog.vue'
 import state from '@/store'
+import { loadJsLink } from '@/utils'
 
 defineOptions({
   name: 'ElGlobalConfig'

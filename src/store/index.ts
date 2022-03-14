@@ -4,6 +4,7 @@ import { Component } from '@/config'
 export interface State {
   selectWidgetItem?: Component
   widgetFormList: Component[]
+  iconSrc: string
   globalCss: string
   globalClass: string
   globalStyle: string
@@ -15,6 +16,7 @@ export interface State {
 export default reactive<State>({
   selectWidgetItem: undefined,
   widgetFormList: [],
+  iconSrc: '',
   globalCss: '',
   globalClass: '{}',
   globalStyle: '{}',
