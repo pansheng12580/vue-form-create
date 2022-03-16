@@ -1,7 +1,7 @@
 import { Component, ComponentGroup } from './index'
 
-// 基础组件
-const basicComponents: Component[] = [
+// 通用组件
+const commonComponents: Component[] = [
   {
     label: '按钮',
     type: 'Button',
@@ -41,13 +41,27 @@ const basicComponents: Component[] = [
       color: '',
       hidden: false
     }
+  },
+  {
+    label: '文本',
+    type: 'Text',
+    customClass: '{}',
+    customStyle: '{}',
+    dynamicProps: '{}',
+    events: {
+      click: 'function click(event, formInstance, state) {}'
+    },
+    config: {
+      content: 'Text',
+      hidden: false
+    }
   }
 ]
 
 const elementComponentsGroup: ComponentGroup[] = [
   {
-    title: '基础组件',
-    components: basicComponents
+    title: '通用组件',
+    components: commonComponents
   }
 ]
 

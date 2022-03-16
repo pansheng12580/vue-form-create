@@ -1,7 +1,10 @@
 <template>
   <div class="widget-item-container" :class="{ active: component.key === state.selectWidgetItem?.key }" @click="state.selectWidgetItem = component">
     <el-button v-if="component.type === 'Button'" v-bind="commonProps" v-on="evnetFunction">{{ commonProps.content }}</el-button>
+
     <icon v-if="component.type === 'Icon'" :name="commonProps.name" v-bind="commonProps" v-on="evnetFunction" />
+
+    <div v-if="component.type === 'Text'" v-bind="commonProps" v-on="evnetFunction">{{ commonProps.content }}</div>
   </div>
 </template>
 
@@ -22,10 +25,16 @@ const { component, formInstance } = defineProps<{
 
 const evnetFunction = createEventFunctionObject(component, formInstance, state.globalState)
 
-const commonProps = computed<Record<string, any>>(() => ({
-  ...component.config,
-  ...loadProps(component.dynamicProps, formInstance, state.globalState),
-  class: loadClass(component.customClass, state.globalState),
-  style: loadStyle(component.customStyle, state.globalState)
-}))
+const commonProps = computed(() => {
+  const obj: Record<string, any> = {
+    ...component.config,
+    ...loadProps(component.dynamicProps, formInstance, state.globalState),
+    class: loadClass(component.customClass, state.globalState),
+    style: loadStyle(component.customStyle, state.globalState)
+  }
+
+  delete obj.hidden
+
+  return obj
+})
 </script>
