@@ -55,6 +55,24 @@ const commonComponents: Component[] = [
       content: 'Text',
       hidden: false
     }
+  },
+  {
+    label: '链接',
+    type: 'Link',
+    customClass: '{}',
+    customStyle: '{}',
+    dynamicProps: '{}',
+    events: {
+      click: 'function click(event, formInstance, state) {}'
+    },
+    config: {
+      content: 'Link',
+      type: undefined,
+      underline: true,
+      disabled: false,
+      href: '',
+      hidden: false
+    }
   }
 ]
 
