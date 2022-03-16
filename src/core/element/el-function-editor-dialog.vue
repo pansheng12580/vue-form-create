@@ -35,7 +35,7 @@ const height = `${document.body.clientHeight / 1.5}px`
 const monacoEditorValue = ref('')
 
 watchEffect(() => {
-  monacoEditorValue.value = props.isGlobal ? state[props.eventName] : state.selectWidgetItem?.events![props.eventName]
+  monacoEditorValue.value = props.isGlobal ? state[props.eventName] : state.selectWidgetItem?.events?.[props.eventName]
 })
 
 const handleSave = () => {

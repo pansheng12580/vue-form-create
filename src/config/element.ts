@@ -76,10 +76,32 @@ const commonComponents: Component[] = [
   }
 ]
 
+// 布局组件
+const layoutComponents: Component[] = [
+  {
+    label: '分割线',
+    type: 'Divider',
+    customClass: '{}',
+    customStyle: '{}',
+    dynamicProps: '{}',
+    config: {
+      content: '',
+      hidden: false,
+      direction: 'horizontal',
+      borderStyle: 'solid',
+      contentPosition: 'center'
+    }
+  }
+]
+
 const elementComponentsGroup: ComponentGroup[] = [
   {
     title: '通用组件',
     components: commonComponents
+  },
+  {
+    title: '布局组件',
+    components: layoutComponents
   }
 ]
 

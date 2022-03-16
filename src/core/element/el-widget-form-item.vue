@@ -7,6 +7,8 @@
     <div v-if="component.type === 'Text'" v-bind="commonProps" v-on="evnetFunction">{{ commonProps.content }}</div>
 
     <el-link v-if="component.type === 'Link'" v-bind="commonProps" v-on="evnetFunction">{{ commonProps.content }}</el-link>
+
+    <el-divider v-if="component.type === 'Divider'" v-bind="commonProps" v-on="evnetFunction">{{ commonProps.content }}</el-divider>
   </div>
 </template>
 
