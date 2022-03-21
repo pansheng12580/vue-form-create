@@ -1,5 +1,22 @@
 <template>
-  <div class="widget-item-container" :class="{ active: component.key === state.selectWidgetItem?.key }" @click.stop="state.selectWidgetItem = component">
+  <draggable
+    v-if="['Row', 'Col'].includes(component.type)"
+    item-key="key"
+    ghost-class="ghost"
+    handle=".drag-widget"
+    :tag="tag"
+    :animation="200"
+    :group="{ name: 'people' }"
+    :list="component.childNodes"
+    :component-data="commonProps"
+    @click.stop="state.selectWidgetItem = component"
+    @add="handleDragAdd"
+  >
+    <template #item="{ element }">
+      <el-widget-form-item :component="element" :form-instance="formInstance" />
+    </template>
+  </draggable>
+  <div v-else class="widget-item-container" :class="{ active: component.key === state.selectWidgetItem?.key }" @click.stop="state.selectWidgetItem = component">
     <el-button v-if="component.type === 'Button'" v-bind="commonProps" v-on="evnetFunction">{{ commonProps.content }}</el-button>
 
     <icon v-if="component.type === 'Icon'" :name="commonProps.name" v-bind="commonProps" v-on="evnetFunction" />
@@ -9,23 +26,6 @@
     <el-link v-if="component.type === 'Link'" v-bind="commonProps" v-on="evnetFunction">{{ commonProps.content }}</el-link>
 
     <el-divider v-if="component.type === 'Divider'" v-bind="commonProps">{{ commonProps.content }}</el-divider>
-
-    <draggable
-      v-if="['Row'].includes(component.type)"
-      item-key="key"
-      ghost-class="ghost"
-      handle=".drag-widget"
-      :tag="tag"
-      :animation="200"
-      :group="{ name: 'people' }"
-      :list="component.childNodes"
-      :component-data="commonProps"
-      @add="handleDragAdd"
-    >
-      <template #item="{ element }">
-        <el-widget-form-item :component="element" :form-instance="formInstance" />
-      </template>
-    </draggable>
   </div>
 </template>
 
@@ -53,7 +53,9 @@ const commonProps = computed(() => {
   const obj: Record<string, any> = {
     ...component.config,
     ...loadProps(component.dynamicProps, formInstance, state.globalState),
-    class: `${loadClass(component.customClass, state.globalState)} ${['Row'].includes(component.type) && 'child-nodes'}`,
+    class: `${loadClass(component.customClass, state.globalState)} ${
+      ['Row', 'Col'].includes(component.type) && `widget-item-container child-nodes ${component.key === state.selectWidgetItem?.key && 'active'}`
+    }`,
     style: loadStyle(component.customStyle, state.globalState)
   }
 
@@ -66,6 +68,8 @@ const tag = computed(() => {
   switch (component.type) {
     case 'Row':
       return 'el-row'
+    case 'Col':
+      return 'el-col'
     default:
       return 'div'
   }
@@ -79,7 +83,7 @@ const handleDragAdd = ({ newIndex }: { newIndex: number }) => {
   childNodes[newIndex].key = `${childNodes[newIndex].type}_${key}`
 
   // eslint-disable-next-line vue/no-mutating-props
-  component.childNodes = childNodes
+  component.childNodes![newIndex] = childNodes[newIndex]
   state.selectWidgetItem = childNodes[newIndex]
 }
 </script>

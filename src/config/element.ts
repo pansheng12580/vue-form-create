@@ -106,6 +106,22 @@ const layoutComponents: Component[] = [
       align: 'top',
       tag: 'div'
     }
+  },
+  {
+    label: '栅格列',
+    type: 'Col',
+    customClass: '{}',
+    customStyle: '{}',
+    dynamicProps: '{}',
+    childNodes: [],
+    config: {
+      hidden: false,
+      span: 2,
+      offset: 0,
+      push: 0,
+      pull: 0,
+      tag: 'div'
+    }
   }
 ]
 

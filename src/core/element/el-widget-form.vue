@@ -48,7 +48,7 @@ const handleDragAdd = ({ newIndex }: { newIndex: number }) => {
 
   widgetFormList[newIndex].key = `${widgetFormList[newIndex].type}_${key}`
 
-  state.widgetFormList = widgetFormList
+  state.widgetFormList[newIndex] = widgetFormList[newIndex]
   state.selectWidgetItem = widgetFormList[newIndex]
 }
 </script>

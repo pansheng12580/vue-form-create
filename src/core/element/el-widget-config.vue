@@ -16,6 +16,8 @@
 
     <el-row-config v-if="state.selectWidgetItem?.type === 'Row'" />
 
+    <el-col-config v-if="state.selectWidgetItem?.type === 'Col'" />
+
     <el-form-item v-if="state.selectWidgetItem" label="自定义Class">
       <el-button class="block-button" @click="classEditorDialogVisible = true">设置</el-button>
     </el-form-item>
@@ -64,6 +66,7 @@ import ElTextConfig from '@/config/element/el-text-config.vue'
 import ElLinkConfig from '@/config/element/el-link-config.vue'
 import ElDividerConfig from '@/config/element/el-divider-config.vue'
 import ElRowConfig from '@/config/element/el-row-config.vue'
+import ElColConfig from '@/config/element/el-col-config.vue'
 import ElClassEditorDialog from './el-class-editor-dialog.vue'
 import ElStyleEditorDialog from './el-style-editor-dialog.vue'
 import ElPropsEditorDialog from './el-props-editor-dialog.vue'
