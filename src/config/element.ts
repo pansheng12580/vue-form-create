@@ -91,6 +91,21 @@ const layoutComponents: Component[] = [
       borderStyle: 'solid',
       contentPosition: 'center'
     }
+  },
+  {
+    label: '栅格行',
+    type: 'Row',
+    customClass: '{}',
+    customStyle: '{}',
+    dynamicProps: '{}',
+    childNodes: [],
+    config: {
+      hidden: false,
+      gutter: 0,
+      justify: 'start',
+      align: 'top',
+      tag: 'div'
+    }
   }
 ]
 
