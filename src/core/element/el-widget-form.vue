@@ -1,7 +1,7 @@
 <template>
   <div class="widget-form-container">
     <div class="form-empty" v-if="!state.widgetFormList.length">从左侧拖拽来添加字段</div>
-    <el-form ref="formInstance" v-bind="state.formConfig">
+    <el-form ref="formInstance" v-bind="state.formConfig" :model="model.designModel" :rules="rules.designRules">
       <draggable
         v-bind="commonProps"
         tag="div"
@@ -14,7 +14,7 @@
         @add="handleDragAdd"
       >
         <template #item="{ element }">
-          <el-widget-form-item :component="element" :form-instance="formInstance" />
+          <el-widget-form-item v-if="element.key" :component="element" :form-instance="formInstance" />
         </template>
       </draggable>
     </el-form>
@@ -27,7 +27,7 @@ import Draggable from 'vuedraggable'
 import { cloneDeep } from 'lodash-es'
 import { v4 } from 'uuid'
 import ElWidgetFormItem from './el-widget-form-item.vue'
-import state from '@/store'
+import { state, model, rules } from '@/store'
 import { loadClass, loadStyle } from '@/utils'
 
 defineOptions({

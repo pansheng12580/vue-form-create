@@ -13,7 +13,7 @@ export interface State {
   [key: string]: any
 }
 
-export default reactive<State>({
+export const state = reactive<State>({
   selectWidgetItem: undefined,
   widgetFormList: [],
   iconSrc: '',
@@ -26,11 +26,19 @@ export default reactive<State>({
     labelWidth: undefined,
     labelSuffix: undefined,
     hideRequiredAsterisk: false,
-    showMessage: false,
+    showMessage: true,
     inlineMessage: false,
     statusIcon: false,
     validateOnRuleChange: false,
     size: 'default',
     disabled: false
   }
+})
+
+export const model = reactive<Record<string, any>>({
+  designModel: {}
+})
+
+export const rules = reactive<Record<string, any>>({
+  designRules: {}
 })

@@ -8,6 +8,7 @@ declare module 'vue' {
     CustomHeader: typeof import('./src/components/custom-header.vue')['default']
     ElAside: typeof import('element-plus/es')['ElAside']
     ElButton: typeof import('element-plus/es')['ElButton']
+    ElCascader: typeof import('element-plus/es')['ElCascader']
     ElClassEditorDialog: typeof import('element-plus/es')['ElClassEditorDialog']
     ElColorPicker: typeof import('element-plus/es')['ElColorPicker']
     ElContainer: typeof import('element-plus/es')['ElContainer']

@@ -125,6 +125,73 @@ const layoutComponents: Component[] = [
   }
 ]
 
+// 数据录入
+const dataEntryComponents: Component[] = [
+  {
+    label: '级联选择器',
+    type: 'Cascader',
+    customClass: '{}',
+    customStyle: '{}',
+    dynamicProps: '{}',
+    dynamicFormItemProps: '{}',
+    events: {
+      change: 'function change(value, formInstance, state) {}',
+      expandChange: 'function expandChange(value, formInstance, state) {}',
+      blur: 'function blur(event, formInstance, state) {}',
+      focus: 'function focus(event, formInstance, state) {}',
+      visibleChange: 'function visibleChange(value, formInstance, state) {}',
+      removeTag: 'function removeTag(value, formInstance, state) {}'
+    },
+    config: {
+      hidden: false,
+      defaultValue: '',
+      placeholder: 'Select',
+      size: 'default',
+      disabled: false,
+      clearable: false,
+      showAllLevels: true,
+      collapseTags: false,
+      collapseTagsTooltip: false,
+      separator: '/',
+      filterable: false,
+      debounce: 300,
+      popperClass: undefined,
+      teleported: true,
+      props: {
+        expandTrigger: 'click',
+        multiple: false,
+        checkStrictly: false,
+        emitPath: true,
+        lazy: false,
+        value: 'value',
+        label: 'label',
+        children: 'children',
+        disabled: 'disabled',
+        leaf: 'leaf'
+      }
+    },
+    remoteConfig: {
+      remote: true,
+      remoteFunc: 'https://raw.githubusercontent.com/fuchengwei/vue-form-create/master/mock/mock.json'
+    },
+    formItemConfig: {
+      labelWidth: '',
+      rules: [
+        {
+          trigger: 'change',
+          required: false,
+          len: undefined,
+          max: undefined,
+          min: undefined,
+          message: undefined,
+          pattern: undefined,
+          type: 'array'
+        }
+      ]
+    }
+  }
+]
+
 const elementComponentsGroup: ComponentGroup[] = [
   {
     title: '通用组件',
@@ -133,6 +200,10 @@ const elementComponentsGroup: ComponentGroup[] = [
   {
     title: '布局组件',
     components: layoutComponents
+  },
+  {
+    title: '数据录入',
+    components: dataEntryComponents
   }
 ]
 

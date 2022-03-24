@@ -4,6 +4,10 @@
       <el-input v-model="state.selectWidgetItem.key" />
     </el-form-item>
 
+    <el-form-item v-if="state.selectWidgetItem?.formItemConfig" label="标题">
+      <el-input v-model="state.selectWidgetItem.label" />
+    </el-form-item>
+
     <el-button-config v-if="state.selectWidgetItem?.type === 'Button'" />
 
     <el-icon-config v-if="state.selectWidgetItem?.type === 'Icon'" />
@@ -17,6 +21,12 @@
     <el-row-config v-if="state.selectWidgetItem?.type === 'Row'" />
 
     <el-col-config v-if="state.selectWidgetItem?.type === 'Col'" />
+
+    <el-cascader-config v-if="state.selectWidgetItem?.type === 'Cascader'" />
+
+    <el-form-item-config v-if="state.selectWidgetItem?.formItemConfig" />
+
+    <el-validate-rule-config v-if="state.selectWidgetItem?.formItemConfig" />
 
     <el-form-item v-if="state.selectWidgetItem" label="自定义Class">
       <el-button class="block-button" @click="classEditorDialogVisible = true">设置</el-button>
@@ -67,11 +77,14 @@ import ElLinkConfig from '@/config/element/el-link-config.vue'
 import ElDividerConfig from '@/config/element/el-divider-config.vue'
 import ElRowConfig from '@/config/element/el-row-config.vue'
 import ElColConfig from '@/config/element/el-col-config.vue'
+import ElFormItemConfig from '@/config/element/el-form-item-config.vue'
+import ElValidateRuleConfig from '@/config/element/el-validate-rule-config.vue'
+import ElCascaderConfig from '@/config/element/el-cascader-config.vue'
 import ElClassEditorDialog from './el-class-editor-dialog.vue'
 import ElStyleEditorDialog from './el-style-editor-dialog.vue'
 import ElPropsEditorDialog from './el-props-editor-dialog.vue'
 import ElFunctionEditorDialog from './el-function-editor-dialog.vue'
-import state from '@/store'
+import { state } from '@/store'
 
 defineOptions({
   name: 'ElWidgetConfig'

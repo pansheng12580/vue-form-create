@@ -9,7 +9,7 @@
 </template>
 
 <script lang="ts" setup>
-import state from '@/store'
+import { state } from '@/store'
 
 defineOptions({
   name: 'ElTextConfig'

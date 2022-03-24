@@ -11,7 +11,7 @@
 <script lang="ts" setup>
 import { computed, ref, watchEffect } from 'vue'
 import MonacoEditor from '@/components/monaco-editor.vue'
-import state from '@/store'
+import { state } from '@/store'
 
 defineOptions({
   name: 'ElClassEditorDialog'

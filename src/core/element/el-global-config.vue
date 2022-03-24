@@ -4,7 +4,7 @@
       <el-radio-group v-model="state.formConfig.labelPosition">
         <el-radio-button label="left">左对齐</el-radio-button>
         <el-radio-button label="right">右对齐</el-radio-button>
-        <el-radio-button label="top">右对齐</el-radio-button>
+        <el-radio-button label="top">顶部对齐</el-radio-button>
       </el-radio-group>
     </el-form-item>
 
@@ -81,7 +81,7 @@ import ElCssEditorDialog from './el-css-editor-dialog.vue'
 import ElClassEditorDialog from './el-class-editor-dialog.vue'
 import ElStyleEditorDialog from './el-style-editor-dialog.vue'
 import ElStateEditorDialog from './el-state-editor-dialog.vue'
-import state from '@/store'
+import { state } from '@/store'
 import { loadJsLink } from '@/utils'
 
 defineOptions({

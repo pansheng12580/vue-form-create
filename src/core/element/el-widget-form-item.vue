@@ -26,17 +26,21 @@
     <el-link v-if="component.type === 'Link'" v-bind="commonProps" v-on="evnetFunction">{{ commonProps.content }}</el-link>
 
     <el-divider v-if="component.type === 'Divider'" v-bind="commonProps">{{ commonProps.content }}</el-divider>
+
+    <el-form-item v-if="component.type === 'Cascader'" v-bind="commonFormItemProps">
+      <el-cascader v-bind="commonProps" v-on="evnetFunction" v-model="model.designModel[component.key!]" />
+    </el-form-item>
   </div>
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, ref, watchEffect, onUnmounted } from 'vue'
 import Draggable from 'vuedraggable'
 import { v4 } from 'uuid'
-import { cloneDeep } from 'lodash-es'
+import { cloneDeep, isArray } from 'lodash-es'
 import Icon from '@/components/icon.vue'
 import { Component } from '@/config'
-import state from '@/store'
+import { state, model, rules } from '@/store'
 import { createEventFunctionObject, loadClass, loadProps, loadStyle } from '@/utils'
 
 defineOptions({
@@ -47,11 +51,14 @@ const { component, formInstance } = defineProps<{
   formInstance: any
 }>()
 
+const remoteOptions = ref<Record<string, any>>([])
+
 const evnetFunction = createEventFunctionObject(component, formInstance, state.globalState)
 
 const commonProps = computed(() => {
   const obj: Record<string, any> = {
     ...component.config,
+    options: component.remoteConfig?.remote ? remoteOptions.value : component.config.options,
     ...loadProps(component.dynamicProps, formInstance, state.globalState),
     class: `${loadClass(component.customClass, state.globalState)} ${
       ['Row', 'Col'].includes(component.type) && `widget-item-container child-nodes ${component.key === state.selectWidgetItem?.key && 'active'}`
@@ -64,6 +71,19 @@ const commonProps = computed(() => {
   return obj
 })
 
+const commonFormItemProps = computed(() => {
+  const obj: Record<string, any> = {
+    ...component.formItemConfig,
+    prop: component.key,
+    label: component.label,
+    ...loadProps(component.dynamicFormItemProps, formInstance, state.globalState)
+  }
+
+  delete obj.rules
+
+  return obj
+})
+
 const tag = computed(() => {
   switch (component.type) {
     case 'Row':
@@ -72,6 +92,37 @@ const tag = computed(() => {
       return 'el-col'
     default:
       return 'div'
+  }
+})
+
+watchEffect(() => {
+  if (component.remoteConfig?.remote && component.remoteConfig?.remoteFunc) {
+    fetch(component.remoteConfig.remoteFunc)
+      .then((resp) => resp.json())
+      .then((json) => {
+        if (isArray(json)) {
+          remoteOptions.value = json
+        }
+      })
+  }
+})
+
+watchEffect(() => {
+  if (component.key && component.formItemConfig) {
+    model.designModel[component.key] = component.config.defaultValue
+  }
+})
+
+watchEffect(() => {
+  if (component.key && component.formItemConfig) {
+    rules.designRules[component.key] = component.formItemConfig.rules
+  }
+})
+
+onUnmounted(() => {
+  if (component.key) {
+    delete model.designModel[component.key]
+    delete rules.designRules[component.key]
   }
 })
 
