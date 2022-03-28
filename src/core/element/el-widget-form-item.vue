@@ -34,6 +34,12 @@
     <el-form-item v-if="component.type === 'Checkbox'" v-bind="commonFormItemProps">
       <el-checkbox v-bind="commonProps" v-on="evnetFunction" v-model="model.designModel[component.key!]" />
     </el-form-item>
+
+    <el-form-item v-if="component.type === 'CheckboxGroup'" v-bind="commonFormItemProps">
+      <el-checkbox-group v-bind="commonProps" v-on="evnetFunction" v-model="model.designModel[component.key!]">
+        <el-checkbox v-for="option of commonProps.options" :key="option.value" :label="option.value">{{ option.label }}</el-checkbox>
+      </el-checkbox-group>
+    </el-form-item>
   </div>
 </template>
 
@@ -45,7 +51,7 @@ import { cloneDeep, isArray } from 'lodash-es'
 import Icon from '@/components/icon.vue'
 import { Component } from '@/config'
 import { state, model, rules } from '@/store'
-import { createEventFunctionObject, loadClass, loadProps, loadStyle } from '@/utils'
+import { createEventFunctionObject, handleResponseData, loadClass, loadProps, loadStyle } from '@/utils'
 
 defineOptions({
   name: 'ElWidgetFormItem'
@@ -105,7 +111,7 @@ watchEffect(() => {
       .then((resp) => resp.json())
       .then((json) => {
         if (isArray(json)) {
-          remoteOptions.value = json
+          remoteOptions.value = handleResponseData(json, component.remoteConfig?.remoteProps)
         }
       })
   }

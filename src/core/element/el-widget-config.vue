@@ -26,6 +26,8 @@
 
     <el-checkbox-config v-if="state.selectWidgetItem?.type === 'Checkbox'" />
 
+    <el-checkbox-group-config v-if="state.selectWidgetItem?.type === 'CheckboxGroup'" />
+
     <el-form-item-config v-if="state.selectWidgetItem?.formItemConfig" />
 
     <el-validate-rule-config v-if="state.selectWidgetItem?.formItemConfig" />
@@ -81,6 +83,7 @@ import ElRowConfig from '@/config/element/el-row-config.vue'
 import ElColConfig from '@/config/element/el-col-config.vue'
 import ElCascaderConfig from '@/config/element/el-cascader-config.vue'
 import ElCheckboxConfig from '@/config/element/el-checkbox-config.vue'
+import ElCheckboxGroupConfig from '@/config/element/el-checkbox-group-config.vue'
 import ElFormItemConfig from '@/config/element/el-form-item-config.vue'
 import ElValidateRuleConfig from '@/config/element/el-validate-rule-config.vue'
 import ElClassEditorDialog from './el-class-editor-dialog.vue'

@@ -111,6 +111,20 @@ export const createEventFunctionObject = (item: Component, formInstance: any, fo
   return eventFunction
 }
 
+// 处理响应数据
+export const handleResponseData = (remoteData: any[], remoteProps?: Record<string, any>): Record<string, any> => {
+  return remoteData?.map((data) => {
+    if (remoteProps) {
+      return {
+        label: data[remoteProps.label],
+        value: data[remoteProps.value],
+        children: handleResponseData(data[remoteProps.children], remoteProps)
+      }
+    }
+    return data
+  })
+}
+
 // 复制文本
 export const copy = (text: string) => {
   const input = document.createElement('textarea')

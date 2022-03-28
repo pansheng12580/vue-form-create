@@ -226,6 +226,52 @@ const dataEntryComponents: Component[] = [
         }
       ]
     }
+  },
+  {
+    label: '多选框组',
+    type: 'CheckboxGroup',
+    customClass: '{}',
+    customStyle: '{}',
+    dynamicProps: '{}',
+    dynamicFormItemProps: '{}',
+    events: {
+      change: 'function change(value, formInstance, formModel, state) {}'
+    },
+    config: {
+      hidden: false,
+      defaultValue: [],
+      size: 'default',
+      disabled: false,
+      min: undefined,
+      max: undefined,
+      options: [
+        { label: 'Option1', value: 'Option1' },
+        { label: 'Option2', value: 'Option2' }
+      ]
+    },
+    remoteConfig: {
+      remote: false,
+      remoteFunc: 'https://raw.githubusercontent.com/fuchengwei/vue-form-create/master/mock/mock.json',
+      remoteProps: {
+        label: 'label',
+        value: 'value'
+      }
+    },
+    formItemConfig: {
+      labelWidth: '',
+      rules: [
+        {
+          trigger: 'change',
+          required: false,
+          len: undefined,
+          max: undefined,
+          min: undefined,
+          message: undefined,
+          pattern: undefined,
+          type: 'array'
+        }
+      ]
+    }
   }
 ]
 
