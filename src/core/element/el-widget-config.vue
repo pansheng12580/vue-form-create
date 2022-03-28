@@ -24,6 +24,8 @@
 
     <el-cascader-config v-if="state.selectWidgetItem?.type === 'Cascader'" />
 
+    <el-checkbox-config v-if="state.selectWidgetItem?.type === 'Checkbox'" />
+
     <el-form-item-config v-if="state.selectWidgetItem?.formItemConfig" />
 
     <el-validate-rule-config v-if="state.selectWidgetItem?.formItemConfig" />
@@ -77,9 +79,10 @@ import ElLinkConfig from '@/config/element/el-link-config.vue'
 import ElDividerConfig from '@/config/element/el-divider-config.vue'
 import ElRowConfig from '@/config/element/el-row-config.vue'
 import ElColConfig from '@/config/element/el-col-config.vue'
+import ElCascaderConfig from '@/config/element/el-cascader-config.vue'
+import ElCheckboxConfig from '@/config/element/el-checkbox-config.vue'
 import ElFormItemConfig from '@/config/element/el-form-item-config.vue'
 import ElValidateRuleConfig from '@/config/element/el-validate-rule-config.vue'
-import ElCascaderConfig from '@/config/element/el-cascader-config.vue'
 import ElClassEditorDialog from './el-class-editor-dialog.vue'
 import ElStyleEditorDialog from './el-style-editor-dialog.vue'
 import ElPropsEditorDialog from './el-props-editor-dialog.vue'

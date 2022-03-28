@@ -30,6 +30,10 @@
     <el-form-item v-if="component.type === 'Cascader'" v-bind="commonFormItemProps">
       <el-cascader v-bind="commonProps" v-on="evnetFunction" v-model="model.designModel[component.key!]" />
     </el-form-item>
+
+    <el-form-item v-if="component.type === 'Checkbox'" v-bind="commonFormItemProps">
+      <el-checkbox v-bind="commonProps" v-on="evnetFunction" v-model="model.designModel[component.key!]" />
+    </el-form-item>
   </div>
 </template>
 
@@ -53,7 +57,7 @@ const { component, formInstance } = defineProps<{
 
 const remoteOptions = ref<Record<string, any>>([])
 
-const evnetFunction = createEventFunctionObject(component, formInstance, state.globalState)
+const evnetFunction = computed(() => createEventFunctionObject(component, formInstance, model.designModel, state.globalState))
 
 const commonProps = computed(() => {
   const obj: Record<string, any> = {

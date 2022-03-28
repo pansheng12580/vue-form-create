@@ -9,7 +9,7 @@ const commonComponents: Component[] = [
     customStyle: '{}',
     dynamicProps: '{}',
     events: {
-      click: 'function click(event, formInstance, state) {}'
+      click: 'function click(event, formInstance, formModel, state) {}'
     },
     config: {
       content: '按钮',
@@ -33,7 +33,7 @@ const commonComponents: Component[] = [
     customStyle: '{}',
     dynamicProps: '{}',
     events: {
-      click: 'function click(event, formInstance, state) {}'
+      click: 'function click(event, formInstance, formModel, state) {}'
     },
     config: {
       name: '',
@@ -49,7 +49,7 @@ const commonComponents: Component[] = [
     customStyle: '{}',
     dynamicProps: '{}',
     events: {
-      click: 'function click(event, formInstance, state) {}'
+      click: 'function click(event, formInstance, formModel, state) {}'
     },
     config: {
       content: 'Text',
@@ -63,7 +63,7 @@ const commonComponents: Component[] = [
     customStyle: '{}',
     dynamicProps: '{}',
     events: {
-      click: 'function click(event, formInstance, state) {}'
+      click: 'function click(event, formInstance, formModel, state) {}'
     },
     config: {
       content: 'Link',
@@ -135,12 +135,12 @@ const dataEntryComponents: Component[] = [
     dynamicProps: '{}',
     dynamicFormItemProps: '{}',
     events: {
-      change: 'function change(value, formInstance, state) {}',
-      expandChange: 'function expandChange(value, formInstance, state) {}',
-      blur: 'function blur(event, formInstance, state) {}',
-      focus: 'function focus(event, formInstance, state) {}',
-      visibleChange: 'function visibleChange(value, formInstance, state) {}',
-      removeTag: 'function removeTag(value, formInstance, state) {}'
+      change: 'function change(value, formInstance, formModel, state) {}',
+      expandChange: 'function expandChange(value, formInstance, formModel, state) {}',
+      blur: 'function blur(event, formInstance, formModel, state) {}',
+      focus: 'function focus(event, formInstance, formModel, state) {}',
+      visibleChange: 'function visibleChange(value, formInstance, formModel, state) {}',
+      removeTag: 'function removeTag(value, formInstance, formModel, state) {}'
     },
     config: {
       hidden: false,
@@ -186,6 +186,43 @@ const dataEntryComponents: Component[] = [
           message: undefined,
           pattern: undefined,
           type: 'array'
+        }
+      ]
+    }
+  },
+  {
+    label: '多选框',
+    type: 'Checkbox',
+    customClass: '{}',
+    customStyle: '{}',
+    dynamicProps: '{}',
+    dynamicFormItemProps: '{}',
+    events: {
+      change: 'function change(value, formInstance, formModel, state) {}'
+    },
+    config: {
+      hidden: false,
+      defaultValue: false,
+      label: 'Checkbox',
+      trueLabel: undefined,
+      falseLabel: undefined,
+      size: 'default',
+      disabled: false,
+      border: false,
+      indeterminate: false
+    },
+    formItemConfig: {
+      labelWidth: '',
+      rules: [
+        {
+          trigger: 'change',
+          required: false,
+          len: undefined,
+          max: undefined,
+          min: undefined,
+          message: undefined,
+          pattern: undefined,
+          type: 'boolean'
         }
       ]
     }

@@ -85,7 +85,7 @@ export const loadProps = (propsText: string | undefined, formInstance: any, stat
 }
 
 // 加载function
-export const loadFunction = (funcText: string, formInstance: any, state: Record<string, any>, ...args: any) => {
+export const loadFunction = (funcText: string, formInstance: any, formModel: Record<string, any>, state: Record<string, any>, ...args: any) => {
   let func
   try {
     const newText = `(function() { return ${funcText} })()`
@@ -94,17 +94,17 @@ export const loadFunction = (funcText: string, formInstance: any, state: Record<
     debounceErrorMessage('加载方法失败')
   }
 
-  return func(...args, formInstance, state)
+  return func(...args, formInstance, formModel, state)
 }
 
 // 创建event函数对象
-export const createEventFunctionObject = (item: Component, formInstance: any, state: Record<string, any>) => {
+export const createEventFunctionObject = (item: Component, formInstance: any, formModel: Record<string, any>, state: Record<string, any>) => {
   const { events } = item
   const eventFunction: Record<string, any> = {}
 
   if (events) {
     Object.keys(events).forEach((key) => {
-      eventFunction[key] = (...args: any) => loadFunction(events[key], formInstance, state, ...args)
+      eventFunction[key] = (...args: any) => loadFunction(events[key], formInstance, formModel, state, ...args)
     })
   }
 
