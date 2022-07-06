@@ -28,7 +28,6 @@
     "serve": "vue-cli-service serve ./example/main.ts --open",
     "build": "vue-cli-service build --target lib --name formCreate ./src/index.ts",
     "lint": "vue-cli-service lint",
-    "install": "npm install && npm run build",
     "prepare": "husky install"
   },
   "peerDependencies": {
