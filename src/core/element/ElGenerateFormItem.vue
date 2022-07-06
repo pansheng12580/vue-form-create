@@ -1,5 +1,5 @@
 <template>
-  <el-form-item v-if="element && element.options?.visiblable ?? true" :key="element.key" :label="element.label" :prop="element.model">
+  <el-form-item v-if="element && element.options?.visiblable" :key="element.key" :label="element.label" :prop="element.model">
     <template v-if="element.type === 'input'">
       <el-input
         v-model="data"

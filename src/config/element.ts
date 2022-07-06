@@ -58,6 +58,7 @@ export const basicComponents = [
       disabled: false,
       clearable: false,
       readonly: false,
+      visiblable: true,
       rules
     }
   },
@@ -77,6 +78,7 @@ export const basicComponents = [
       disabled: false,
       clearable: false,
       readonly: false,
+      visiblable: true,
       rules
     }
   },
@@ -94,6 +96,7 @@ export const basicComponents = [
       disabled: false,
       clearable: false,
       readonly: false,
+      visiblable: true,
       rules
     }
   },
@@ -107,6 +110,7 @@ export const basicComponents = [
       max: 100,
       step: 1,
       disabled: false,
+      visiblable: true,
       rules
     }
   },
@@ -141,6 +145,7 @@ export const basicComponents = [
         label: 'label'
       },
       disabled: false,
+      visiblable: true,
       rules
     }
   },
@@ -175,6 +180,7 @@ export const basicComponents = [
         label: 'label'
       },
       disabled: false,
+      visiblable: true,
       rules
     }
   },
@@ -191,6 +197,7 @@ export const basicComponents = [
       editable: true,
       clearable: true,
       disabled: false,
+      visiblable: true,
       rules
     }
   },
@@ -207,6 +214,7 @@ export const basicComponents = [
       editable: true,
       clearable: true,
       disabled: false,
+      visiblable: true,
       rules
     }
   },
@@ -218,6 +226,7 @@ export const basicComponents = [
       max: 5,
       allowHalf: false,
       disabled: false,
+      visiblable: true,
       rules
     }
   },
@@ -234,6 +243,7 @@ export const basicComponents = [
       filterable: false,
       clearable: false,
       disabled: false,
+      visiblable: true,
       props: {
         label: 'label',
         value: 'value'
@@ -264,6 +274,7 @@ export const basicComponents = [
     options: {
       defaultValue: false,
       disabled: false,
+      visiblable: true,
       activeText: '',
       inactiveText: '',
       rules
@@ -279,6 +290,7 @@ export const basicComponents = [
       max: 100,
       step: 1,
       disabled: false,
+      visiblable: true,
       range: false,
       rules
     }
@@ -287,6 +299,7 @@ export const basicComponents = [
     label: '文字',
     type: 'text',
     options: {
+      visiblable: true,
       defaultValue: 'This is a text'
     }
   }
@@ -306,6 +319,7 @@ export const advanceComponents = [
       limit: 3,
       multiple: false,
       disabled: false,
+      visiblable: true,
       rules
     }
   },
@@ -315,7 +329,8 @@ export const advanceComponents = [
     options: {
       defaultValue: '',
       width: '',
-      disabled: false
+      disabled: false,
+      visiblable: true
     }
   },
   {
@@ -326,6 +341,7 @@ export const advanceComponents = [
       width: '200px',
       placeholder: '',
       disabled: false,
+      visiblable: true,
       clearable: false,
       filterable: false,
       remote: true,
