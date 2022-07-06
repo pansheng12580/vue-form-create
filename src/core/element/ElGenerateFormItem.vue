@@ -112,6 +112,7 @@
         :editable="element.options.editable"
         :clearable="element.options.clearable"
         :format="element.options.format"
+        :value-format="element.options.valueFormat"
         :disabled="disabled || element.options.disabled"
         :style="{ width: element.options.width }"
       />
@@ -125,6 +126,7 @@
         :editable="element.options.editable"
         :clearable="element.options.clearable"
         :format="element.options.format"
+        :value-format="element.options.valueFormat"
         :disabled="disabled || element.options.disabled"
         :style="{ width: element.options.width }"
       />
