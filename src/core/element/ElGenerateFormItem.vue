@@ -1,5 +1,5 @@
 <template>
-  <el-form-item v-if="element" :key="element.key" :label="element.label" :prop="element.model">
+  <el-form-item v-if="element && element.options?.visiblable ?? true" :key="element.key" :label="element.label" :prop="element.model">
     <template v-if="element.type === 'input'">
       <el-input
         v-model="data"
@@ -183,7 +183,7 @@
       />
     </template>
 
-    <template v-if="element.type == 'text'">
+    <template v-if="element.type === 'text'">
       <span>{{ element.options.defaultValue }}</span>
     </template>
 
