@@ -312,7 +312,7 @@ export const advanceComponents = [
     options: {
       defaultValue: [],
       name: 'file',
-      action: 'http://example.com/upload',
+      action: 'http://localhost:13592/common/upload',
       method: 'post',
       listType: 'text',
       accept: 'image/*',
