@@ -4,7 +4,7 @@
   "version": "1.2.10",
   "main": "dist/formCreate.umd.min.js",
   "types": "src/index.d.ts",
-  "homepage": "https://github.com/fuchengwei/vue-form-create",
+  "homepage": "https://github.com/pansheng12580/vue-form-create.git",
   "author": {
     "name": "fuchengwei"
   },
@@ -18,7 +18,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com:fuchengwei/vue-form-create"
+    "url": "git+https://github.com/pansheng12580/vue-form-create.git"
   },
   "files": [
     "dist/*",
