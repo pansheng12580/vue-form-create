@@ -89100,7 +89100,7 @@ const advanceComponents = [{
   options: {
     defaultValue: [],
     name: 'file',
-    action: 'http://example.com/upload',
+    action: '/dev-api/common/upload',
     method: 'post',
     listType: 'text',
     accept: 'image/*',
@@ -89413,7 +89413,7 @@ const element_advanceComponents = [{
   options: {
     defaultValue: [],
     name: 'file',
-    action: 'http://example.com/upload',
+    action: '/dev-api/common/upload',
     method: 'post',
     listType: 'text',
     accept: 'image/*',
@@ -91176,15 +91176,15 @@ export default defineComponent({
 const AntdDesignForm_exports_ = /*#__PURE__*/exportHelper_default()(AntdDesignFormvue_type_script_lang_ts, [['render',render]])
 
 /* harmony default export */ var AntdDesignForm = (AntdDesignForm_exports_);
-// CONCATENATED MODULE: ./node_modules/.store/cache-loader@4.1.0/node_modules/cache-loader/dist/cjs.js??ref--15-0!./node_modules/.store/thread-loader@2.1.3/node_modules/thread-loader/dist/cjs.js!./node_modules/.store/babel-loader@8.3.0/node_modules/babel-loader/lib!./node_modules/.store/ts-loader@6.2.2/node_modules/ts-loader??ref--15-3!./node_modules/.store/vue-loader@16.8.3/node_modules/vue-loader/dist/templateLoader.js??ref--7!./node_modules/.store/cache-loader@4.1.0/node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/.store/vue-loader@16.8.3/node_modules/vue-loader/dist??ref--1-1!./src/core/element/ElDesignForm.vue?vue&type=template&id=56ceffb8&ts=true
+// CONCATENATED MODULE: ./node_modules/.store/cache-loader@4.1.0/node_modules/cache-loader/dist/cjs.js??ref--15-0!./node_modules/.store/thread-loader@2.1.3/node_modules/thread-loader/dist/cjs.js!./node_modules/.store/babel-loader@8.3.0/node_modules/babel-loader/lib!./node_modules/.store/ts-loader@6.2.2/node_modules/ts-loader??ref--15-3!./node_modules/.store/vue-loader@16.8.3/node_modules/vue-loader/dist/templateLoader.js??ref--7!./node_modules/.store/cache-loader@4.1.0/node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/.store/vue-loader@16.8.3/node_modules/vue-loader/dist??ref--1-1!./src/core/element/ElDesignForm.vue?vue&type=template&id=634a5faa&ts=true
 
-const ElDesignFormvue_type_template_id_56ceffb8_ts_true_hoisted_1 = {
+const ElDesignFormvue_type_template_id_634a5faa_ts_true_hoisted_1 = {
   class: "fc-style"
 };
-const ElDesignFormvue_type_template_id_56ceffb8_ts_true_hoisted_2 = {
+const ElDesignFormvue_type_template_id_634a5faa_ts_true_hoisted_2 = {
   class: "components"
 };
-function ElDesignFormvue_type_template_id_56ceffb8_ts_true_render(_ctx, _cache, $props, $setup, $data, $options) {
+function ElDesignFormvue_type_template_id_634a5faa_ts_true_render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_ComponentGroup = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("ComponentGroup");
   const _component_el_aside = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("el-aside");
   const _component_ElCustomHeader = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("ElCustomHeader");
@@ -91201,7 +91201,7 @@ function ElDesignFormvue_type_template_id_56ceffb8_ts_true_render(_ctx, _cache, 
   const _component_ElGenerateForm = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("ElGenerateForm");
   const _component_el_tab_pane = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("el-tab-pane");
   const _component_el_tabs = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("el-tabs");
-  return Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", ElDesignFormvue_type_template_id_56ceffb8_ts_true_hoisted_1, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(_component_el_container, {
+  return Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", ElDesignFormvue_type_template_id_634a5faa_ts_true_hoisted_1, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(_component_el_container, {
     class: "fc-container"
   }, {
     default: Object(external_commonjs_vue_commonjs2_vue_root_Vue_["withCtx"])(() => [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(_component_el_main, {
@@ -91211,7 +91211,7 @@ function ElDesignFormvue_type_template_id_56ceffb8_ts_true_render(_ctx, _cache, 
         default: Object(external_commonjs_vue_commonjs2_vue_root_Vue_["withCtx"])(() => [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(_component_el_aside, {
           width: "250px"
         }, {
-          default: Object(external_commonjs_vue_commonjs2_vue_root_Vue_["withCtx"])(() => [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("div", ElDesignFormvue_type_template_id_56ceffb8_ts_true_hoisted_2, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(_component_ComponentGroup, {
+          default: Object(external_commonjs_vue_commonjs2_vue_root_Vue_["withCtx"])(() => [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("div", ElDesignFormvue_type_template_id_634a5faa_ts_true_hoisted_2, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(_component_ComponentGroup, {
             title: "基础字段",
             fields: _ctx.basicFields,
             list: _ctx.element.basicComponents
@@ -91445,7 +91445,7 @@ function ElDesignFormvue_type_template_id_56ceffb8_ts_true_render(_ctx, _cache, 
     _: 3
   })]);
 }
-// CONCATENATED MODULE: ./src/core/element/ElDesignForm.vue?vue&type=template&id=56ceffb8&ts=true
+// CONCATENATED MODULE: ./src/core/element/ElDesignForm.vue?vue&type=template&id=634a5faa&ts=true
 
 // EXTERNAL MODULE: ./node_modules/.store/@vueuse+core@9.13.0/node_modules/@vueuse/core/index.cjs
 var core = __webpack_require__("4ad4");
@@ -95246,8 +95246,8 @@ const ElFormConfig_exports_ = /*#__PURE__*/exportHelper_default()(ElFormConfigvu
               res[i].map(v => {
                 arr.push(v === null || v === void 0 ? void 0 : v.response.url);
               });
+              res[i] = arr;
             }
-            res[i] = arr;
           }
         }
         state.dataJsonTemplate = JSON.stringify(res, null, 2);
@@ -95304,7 +95304,7 @@ const ElFormConfig_exports_ = /*#__PURE__*/exportHelper_default()(ElFormConfigvu
 
 
 
-const ElDesignForm_exports_ = /*#__PURE__*/exportHelper_default()(ElDesignFormvue_type_script_lang_ts, [['render',ElDesignFormvue_type_template_id_56ceffb8_ts_true_render]])
+const ElDesignForm_exports_ = /*#__PURE__*/exportHelper_default()(ElDesignFormvue_type_script_lang_ts, [['render',ElDesignFormvue_type_template_id_634a5faa_ts_true_render]])
 
 /* harmony default export */ var ElDesignForm = (ElDesignForm_exports_);
 // CONCATENATED MODULE: ./src/icons/index.ts

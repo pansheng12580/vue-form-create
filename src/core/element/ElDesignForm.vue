@@ -221,8 +221,8 @@ export default defineComponent({
               res[i].map((v: any) => {
                 arr.push(v?.response.url)
               })
+              res[i] = arr
             }
-            res[i] = arr
           }
         }
         state.dataJsonTemplate = JSON.stringify(res, null, 2)
