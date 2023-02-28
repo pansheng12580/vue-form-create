@@ -214,17 +214,17 @@ export default defineComponent({
 
     const handleGetData = () => {
       state.generateFormRef.getData().then((res: any) => {
-        if (res !== null) {
-          for (const i in res) {
-            const arr: any = []
-            if (Array.isArray(res[i])) {
-              res[i].map((v: any) => {
-                arr.push(v?.response.url)
-              })
-              res[i] = arr
-            }
-          }
-        }
+        // if (res !== null) {
+        //   for (const i in res) {
+        //     const arr: any = []
+        //     if (Array.isArray(res[i])) {
+        //       res[i].map((v: any) => {
+        //         arr.push({ url: v?.response.url, name: v?.response.newFileName })
+        //       })
+        //       res[i] = arr
+        //     }
+        //   }
+        // }
         state.dataJsonTemplate = JSON.stringify(res, null, 2)
         state.dataJsonVisible = true
       })

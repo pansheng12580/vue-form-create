@@ -27,6 +27,7 @@ export default defineComponent({
     }
   },
   setup(props) {
+    console.log(props)
     const isExternal = computed(() => utils.isExternal(props.iconClass))
     const iconName = computed(() => `#icon-${props.iconClass}`)
     const svgClass = computed(() => {
