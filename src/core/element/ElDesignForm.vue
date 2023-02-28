@@ -5,69 +5,35 @@
         <el-container>
           <el-aside width="250px">
             <div class="components">
-              <ComponentGroup
-                title="基础字段"
-                :fields="basicFields"
-                :list="element.basicComponents"
-              />
-              <ComponentGroup
-                title="高级字段"
-                :fields="advanceFields"
-                :list="element.advanceComponents"
-              />
-              <ComponentGroup
-                title="布局字段"
-                :fields="layoutFields"
-                :list="element.layoutComponents"
-              />
+              <ComponentGroup title="基础字段" :fields="basicFields" :list="element.basicComponents" />
+              <ComponentGroup title="高级字段" :fields="advanceFields" :list="element.advanceComponents" />
+              <ComponentGroup title="布局字段" :fields="layoutFields" :list="element.layoutComponents" />
             </div>
           </el-aside>
           <el-main class="center-container">
-            <ElCustomHeader
-              v-bind="$props"
-              @preview="() => (previewVisible = true)"
-              @uploadJson="() => (uploadJsonVisible = true)"
-              @generateJson="handleGenerateJson"
-              @generateCode="handleGenerateCode"
-              @clearable="handleClearable"
-            >
+            <ElCustomHeader v-bind="$props" @preview="() => (previewVisible = true)"
+              @uploadJson="() => (uploadJsonVisible = true)" @generateJson="handleGenerateJson"
+              @generateCode="handleGenerateCode" @clearable="handleClearable">
               <slot name="header"></slot>
             </ElCustomHeader>
             <el-main :class="{ 'widget-empty': widgetForm.list }">
-              <ElWidgetForm
-                ref="widgetFormRef"
-                v-model:widgetForm="widgetForm"
-                v-model:widgetFormSelect="widgetFormSelect"
-              />
+              <ElWidgetForm ref="widgetFormRef" v-model:widgetForm="widgetForm"
+                v-model:widgetFormSelect="widgetFormSelect" />
             </el-main>
           </el-main>
           <el-aside class="widget-config-container" width="300px">
             <el-container>
               <el-header>
-                <div
-                  class="config-tab"
-                  :class="{ active: configTab === 'widget' }"
-                  @click="configTab = 'widget'"
-                >
+                <div class="config-tab" :class="{ active: configTab === 'widget' }" @click="configTab = 'widget'">
                   字段属性
                 </div>
-                <div
-                  class="config-tab"
-                  :class="{ active: configTab === 'form' }"
-                  @click="configTab = 'form'"
-                >
+                <div class="config-tab" :class="{ active: configTab === 'form' }" @click="configTab = 'form'">
                   表单属性
                 </div>
               </el-header>
               <el-main class="config-content">
-                <ElWidgetConfig
-                  v-show="configTab === 'widget'"
-                  v-model:select="widgetFormSelect"
-                />
-                <ElFormConfig
-                  v-show="configTab === 'form'"
-                  v-model:config="widgetForm.config"
-                />
+                <ElWidgetConfig v-show="configTab === 'widget'" v-model:select="widgetFormSelect" />
+                <ElFormConfig v-show="configTab === 'form'" v-model:config="widgetForm.config" />
               </el-main>
             </el-container>
           </el-aside>
@@ -75,47 +41,27 @@
       </el-main>
 
       <el-dialog v-model="uploadJsonVisible" title="导入JSON" :width="800">
-        <el-alert
-          type="info"
-          title="JSON格式如下，直接复制生成的json覆盖此处代码点击确定即可"
-          style="margin-bottom: 10px"
-        />
+        <el-alert type="info" title="JSON格式如下，直接复制生成的json覆盖此处代码点击确定即可" style="margin-bottom: 10px" />
         <CodeEditor v-model:value="jsonEg" language="json" />
         <template #footer>
-          <el-button @click="() => (uploadJsonVisible = false)"
-            >取消</el-button
-          >
-          <el-button type="primary" @click="handleUploadJson"
-            >导入</el-button
-          >
+          <el-button @click="() => (uploadJsonVisible = false)">取消</el-button>
+          <el-button type="primary" @click="handleUploadJson">导入</el-button>
         </template>
       </el-dialog>
 
       <el-dialog v-model="previewVisible" title="预览" :width="800">
-        <ElGenerateForm
-          ref="generateFormRef"
-          v-if="previewVisible"
-          :data="widgetForm"
-        />
+        <ElGenerateForm ref="generateFormRef" v-if="previewVisible" :data="widgetForm" />
         <template #footer>
           <el-button @click="handleReset">重置</el-button>
-          <el-button type="primary" @click="handleGetData"
-            >获取数据</el-button
-          >
+          <el-button type="primary" @click="handleGetData">获取数据</el-button>
         </template>
 
         <el-dialog v-model="dataJsonVisible" title="获取数据" :width="800">
           <CodeEditor :value="dataJsonTemplate" language="json" readonly />
 
           <template #footer>
-            <el-button @click="() => (dataJsonVisible = false)"
-              >取消</el-button
-            >
-            <el-button
-              type="primary"
-              @click="handleCopyClick(dataJsonTemplate)"
-              >Copy</el-button
-            >
+            <el-button @click="() => (dataJsonVisible = false)">取消</el-button>
+            <el-button type="primary" @click="handleCopyClick(dataJsonTemplate)">Copy</el-button>
           </template>
         </el-dialog>
       </el-dialog>
@@ -124,23 +70,13 @@
         <CodeEditor :value="generateJsonTemplate" language="json" readonly />
 
         <template #footer>
-          <el-button @click="() => (generateJsonVisible = false)"
-            >取消</el-button
-          >
-          <el-button
-            type="primary"
-            @click="handleCopyClick(generateJsonTemplate)"
-            >Copy</el-button
-          >
+          <el-button @click="() => (generateJsonVisible = false)">取消</el-button>
+          <el-button type="primary" @click="handleCopyClick(generateJsonTemplate)">Copy</el-button>
         </template>
       </el-dialog>
 
       <el-dialog v-model="dataCodeVisible" title="生产代码" :width="800">
-        <el-tabs
-          type="card"
-          v-model="codeLanguage"
-          :tabBarStyle="{ margin: 0 }"
-        >
+        <el-tabs type="card" v-model="codeLanguage" :tabBarStyle="{ margin: 0 }">
           <el-tab-pane label="Vue Component" :name="codeType.Vue">
             <CodeEditor :value="dataCodeTemplate" language="html" readonly />
           </el-tab-pane>
@@ -150,14 +86,8 @@
         </el-tabs>
 
         <template #footer>
-          <el-button @click="() => (dataCodeVisible = false)"
-            >取消</el-button
-          >
-          <el-button
-            type="primary"
-            @click="handleCopyClick(dataCodeTemplate)"
-            >Copy</el-button
-          >
+          <el-button @click="() => (dataCodeVisible = false)">取消</el-button>
+          <el-button type="primary" @click="handleCopyClick(dataCodeTemplate)">Copy</el-button>
         </template>
       </el-dialog>
     </el-container>
@@ -284,6 +214,17 @@ export default defineComponent({
 
     const handleGetData = () => {
       state.generateFormRef.getData().then((res: any) => {
+        if (res !== null) {
+          for (const i in res) {
+            const arr: any = []
+            if (Array.isArray(res[i])) {
+              res[i].map((v: any) => {
+                arr.push(v?.response.url)
+              })
+            }
+            res[i] = arr
+          }
+        }
         state.dataJsonTemplate = JSON.stringify(res, null, 2)
         state.dataJsonVisible = true
       })
