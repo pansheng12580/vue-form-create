@@ -83,8 +83,6 @@ export default defineComponent({
         element.widgetForm
     })
 
-    console.log(state.widgetForm)
-
     const generateModel = (list: any[]) => {
       for (let index = 0; index < list.length; index++) {
         const model = list[index].model

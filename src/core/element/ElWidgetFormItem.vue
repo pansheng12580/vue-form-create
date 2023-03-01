@@ -182,14 +182,28 @@ export default defineComponent({
     }
   },
   emits: ['copy', 'delete'],
-  setup() {
+  setup(props) {
     const state = reactive({
       dialogVisible: false,
       url: ''
     })
+
     const showImage = (file: any) => {
-      state.dialogVisible = true
+      const acceptType = props.element?.options.accept
       state.url = file.url
+      if (/image/.test(acceptType)) {
+        state.dialogVisible = true
+      } else {
+        const alink = document.createElement('a')
+        alink.style.display = 'none'
+        alink.download = file.name
+        alink.href = file.response.url
+        alink.target = '__blank'
+        document.body.appendChild(alink)
+        alink.click()
+        document.body.removeChild(alink)
+        URL.revokeObjectURL(file.response.url)
+      }
     }
 
     return {

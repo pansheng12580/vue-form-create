@@ -131,16 +131,19 @@
         :disabled="disabled || element.options.disabled" :style="{ width: element.options.width }" />
     </template>
     <el-dialog v-model="dialogVisible" width="50%" height="50%">
-      <img w-full :src="url" alt="Preview Image" style="max-width:100%;max-height:100%"/>
+      <img w-full :src="url" alt="Preview Image" style="max-width:100%;max-height:100%" />
     </el-dialog>
+
   </el-form-item>
 </template>
 
 <script lang="ts">
-import { computed, defineComponent, PropType, reactive, toRefs } from 'vue'
+import { computed, defineComponent, PropType, reactive, toRefs, ref } from 'vue'
 import SvgIcon from '@/components/SvgIcon.vue'
 import RichTextEditor from '@/components/RichTextEditor.vue'
 import { WidgetForm } from '@/config/element'
+import { ElMenuItem } from 'element-plus'
+import { element } from '@/config'
 
 export default defineComponent({
   name: 'ElGenerateFormItem',
@@ -175,12 +178,13 @@ export default defineComponent({
       }
     })
 
+    const alink = ref(null)
+
     const state = reactive({
       dialogVisible: false,
       url: ''
     })
 
-    console.log(props.element)
     const handleFilterOption = (input: string, option: { label: string }) =>
       option.label.toLowerCase().includes(input)
 
@@ -189,8 +193,21 @@ export default defineComponent({
     }
 
     const showImage = (file: any) => {
-      state.dialogVisible = true
+      const acceptType = props.element?.options.accept
       state.url = file.url
+      if (/image/.test(acceptType)) {
+        state.dialogVisible = true
+      } else {
+        const alink = document.createElement('a')
+        alink.style.display = 'none'
+        alink.download = file.name
+        alink.href = file.response.url
+        alink.target = '__blank'
+        document.body.appendChild(alink)
+        alink.click()
+        document.body.removeChild(alink)
+        URL.revokeObjectURL(file.response.url)
+      }
     }
 
     return {
@@ -198,7 +215,8 @@ export default defineComponent({
       handleFilterOption,
       handleUploadSuccess,
       showImage,
-      ...toRefs(state)
+      ...toRefs(state),
+      alink
     }
   }
 })
