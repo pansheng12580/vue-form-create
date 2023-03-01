@@ -26406,6 +26406,17 @@ function del(target, key) {
 
 /***/ }),
 
+/***/ "60d5":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_store_vue_style_loader_4_1_3_node_modules_vue_style_loader_index_js_ref_12_oneOf_1_0_node_modules_store_css_loader_3_6_0_node_modules_css_loader_dist_cjs_js_ref_12_oneOf_1_1_node_modules_store_vue_loader_16_8_3_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_store_postcss_loader_3_0_0_node_modules_postcss_loader_src_index_js_ref_12_oneOf_1_2_node_modules_store_postcss_loader_3_0_0_node_modules_postcss_loader_src_index_js_ref_12_oneOf_1_3_node_modules_store_stylus_loader_3_0_2_node_modules_stylus_loader_index_js_ref_12_oneOf_1_4_node_modules_store_cache_loader_4_1_0_node_modules_cache_loader_dist_cjs_js_ref_1_0_node_modules_store_vue_loader_16_8_3_node_modules_vue_loader_dist_index_js_ref_1_1_SvgIcon_vue_vue_type_style_index_0_id_3a0da814_lang_stylus_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("efe1");
+/* harmony import */ var _node_modules_store_vue_style_loader_4_1_3_node_modules_vue_style_loader_index_js_ref_12_oneOf_1_0_node_modules_store_css_loader_3_6_0_node_modules_css_loader_dist_cjs_js_ref_12_oneOf_1_1_node_modules_store_vue_loader_16_8_3_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_store_postcss_loader_3_0_0_node_modules_postcss_loader_src_index_js_ref_12_oneOf_1_2_node_modules_store_postcss_loader_3_0_0_node_modules_postcss_loader_src_index_js_ref_12_oneOf_1_3_node_modules_store_stylus_loader_3_0_2_node_modules_stylus_loader_index_js_ref_12_oneOf_1_4_node_modules_store_cache_loader_4_1_0_node_modules_cache_loader_dist_cjs_js_ref_1_0_node_modules_store_vue_loader_16_8_3_node_modules_vue_loader_dist_index_js_ref_1_1_SvgIcon_vue_vue_type_style_index_0_id_3a0da814_lang_stylus_scoped_true__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_store_vue_style_loader_4_1_3_node_modules_vue_style_loader_index_js_ref_12_oneOf_1_0_node_modules_store_css_loader_3_6_0_node_modules_css_loader_dist_cjs_js_ref_12_oneOf_1_1_node_modules_store_vue_loader_16_8_3_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_store_postcss_loader_3_0_0_node_modules_postcss_loader_src_index_js_ref_12_oneOf_1_2_node_modules_store_postcss_loader_3_0_0_node_modules_postcss_loader_src_index_js_ref_12_oneOf_1_3_node_modules_store_stylus_loader_3_0_2_node_modules_stylus_loader_index_js_ref_12_oneOf_1_4_node_modules_store_cache_loader_4_1_0_node_modules_cache_loader_dist_cjs_js_ref_1_0_node_modules_store_vue_loader_16_8_3_node_modules_vue_loader_dist_index_js_ref_1_1_SvgIcon_vue_vue_type_style_index_0_id_3a0da814_lang_stylus_scoped_true__WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+
+
+/***/ }),
+
 /***/ "6209":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -26513,22 +26524,6 @@ module.exports = function (argument) {
   }
 };
 
-
-/***/ }),
-
-/***/ "6c19":
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__("a2ef");
-if(content.__esModule) content = content.default;
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var add = __webpack_require__("c9a2").default
-var update = add("6c520be4", content, true, {"sourceMap":false,"shadowMode":false});
 
 /***/ }),
 
@@ -55267,17 +55262,6 @@ module.exports = typeof Reflect == 'object' && Reflect.apply || (NATIVE_BIND ? c
 
 /***/ }),
 
-/***/ "8860":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _node_modules_store_vue_style_loader_4_1_3_node_modules_vue_style_loader_index_js_ref_12_oneOf_1_0_node_modules_store_css_loader_3_6_0_node_modules_css_loader_dist_cjs_js_ref_12_oneOf_1_1_node_modules_store_vue_loader_16_8_3_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_store_postcss_loader_3_0_0_node_modules_postcss_loader_src_index_js_ref_12_oneOf_1_2_node_modules_store_postcss_loader_3_0_0_node_modules_postcss_loader_src_index_js_ref_12_oneOf_1_3_node_modules_store_stylus_loader_3_0_2_node_modules_stylus_loader_index_js_ref_12_oneOf_1_4_node_modules_store_cache_loader_4_1_0_node_modules_cache_loader_dist_cjs_js_ref_1_0_node_modules_store_vue_loader_16_8_3_node_modules_vue_loader_dist_index_js_ref_1_1_SvgIcon_vue_vue_type_style_index_0_id_5fd9571c_lang_stylus_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("6c19");
-/* harmony import */ var _node_modules_store_vue_style_loader_4_1_3_node_modules_vue_style_loader_index_js_ref_12_oneOf_1_0_node_modules_store_css_loader_3_6_0_node_modules_css_loader_dist_cjs_js_ref_12_oneOf_1_1_node_modules_store_vue_loader_16_8_3_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_store_postcss_loader_3_0_0_node_modules_postcss_loader_src_index_js_ref_12_oneOf_1_2_node_modules_store_postcss_loader_3_0_0_node_modules_postcss_loader_src_index_js_ref_12_oneOf_1_3_node_modules_store_stylus_loader_3_0_2_node_modules_stylus_loader_index_js_ref_12_oneOf_1_4_node_modules_store_cache_loader_4_1_0_node_modules_cache_loader_dist_cjs_js_ref_1_0_node_modules_store_vue_loader_16_8_3_node_modules_vue_loader_dist_index_js_ref_1_1_SvgIcon_vue_vue_type_style_index_0_id_5fd9571c_lang_stylus_scoped_true__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_store_vue_style_loader_4_1_3_node_modules_vue_style_loader_index_js_ref_12_oneOf_1_0_node_modules_store_css_loader_3_6_0_node_modules_css_loader_dist_cjs_js_ref_12_oneOf_1_1_node_modules_store_vue_loader_16_8_3_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_store_postcss_loader_3_0_0_node_modules_postcss_loader_src_index_js_ref_12_oneOf_1_2_node_modules_store_postcss_loader_3_0_0_node_modules_postcss_loader_src_index_js_ref_12_oneOf_1_3_node_modules_store_stylus_loader_3_0_2_node_modules_stylus_loader_index_js_ref_12_oneOf_1_4_node_modules_store_cache_loader_4_1_0_node_modules_cache_loader_dist_cjs_js_ref_1_0_node_modules_store_vue_loader_16_8_3_node_modules_vue_loader_dist_index_js_ref_1_1_SvgIcon_vue_vue_type_style_index_0_id_5fd9571c_lang_stylus_scoped_true__WEBPACK_IMPORTED_MODULE_0__);
-/* unused harmony reexport * */
-
-
-/***/ }),
-
 /***/ "8963":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -81517,20 +81501,6 @@ module.exports = fails(function () {
 
 /***/ }),
 
-/***/ "a2ef":
-/***/ (function(module, exports, __webpack_require__) {
-
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__("5acd");
-exports = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-exports.push([module.i, ".svg-icon[data-v-5fd9571c]{width:1em;height:1em;vertical-align:-.15em;fill:currentColor;overflow:hidden}.svg-external-icon[data-v-5fd9571c]{background-color:currentColor;-webkit-mask-size:cover!important;mask-size:cover!important;display:inline-block}", ""]);
-// Exports
-module.exports = exports;
-
-
-/***/ }),
-
 /***/ "a2f5":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -87454,11 +87424,11 @@ function ComponentGroupvue_type_template_id_0c750d8f_ts_true_render(_ctx, _cache
 var vuedraggable_umd = __webpack_require__("bbef");
 var vuedraggable_umd_default = /*#__PURE__*/__webpack_require__.n(vuedraggable_umd);
 
-// CONCATENATED MODULE: ./node_modules/.store/cache-loader@4.1.0/node_modules/cache-loader/dist/cjs.js??ref--15-0!./node_modules/.store/thread-loader@2.1.3/node_modules/thread-loader/dist/cjs.js!./node_modules/.store/babel-loader@8.3.0/node_modules/babel-loader/lib!./node_modules/.store/ts-loader@6.2.2/node_modules/ts-loader??ref--15-3!./node_modules/.store/vue-loader@16.8.3/node_modules/vue-loader/dist/templateLoader.js??ref--7!./node_modules/.store/cache-loader@4.1.0/node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/.store/vue-loader@16.8.3/node_modules/vue-loader/dist??ref--1-1!./src/components/SvgIcon.vue?vue&type=template&id=5fd9571c&scoped=true&ts=true
+// CONCATENATED MODULE: ./node_modules/.store/cache-loader@4.1.0/node_modules/cache-loader/dist/cjs.js??ref--15-0!./node_modules/.store/thread-loader@2.1.3/node_modules/thread-loader/dist/cjs.js!./node_modules/.store/babel-loader@8.3.0/node_modules/babel-loader/lib!./node_modules/.store/ts-loader@6.2.2/node_modules/ts-loader??ref--15-3!./node_modules/.store/vue-loader@16.8.3/node_modules/vue-loader/dist/templateLoader.js??ref--7!./node_modules/.store/cache-loader@4.1.0/node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/.store/vue-loader@16.8.3/node_modules/vue-loader/dist??ref--1-1!./src/components/SvgIcon.vue?vue&type=template&id=3a0da814&scoped=true&ts=true
 
-const _withScopeId = n => (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["pushScopeId"])("data-v-5fd9571c"), n = n(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["popScopeId"])(), n);
-const SvgIconvue_type_template_id_5fd9571c_scoped_true_ts_true_hoisted_1 = ["href"];
-function SvgIconvue_type_template_id_5fd9571c_scoped_true_ts_true_render(_ctx, _cache, $props, $setup, $data, $options) {
+const _withScopeId = n => (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["pushScopeId"])("data-v-3a0da814"), n = n(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["popScopeId"])(), n);
+const SvgIconvue_type_template_id_3a0da814_scoped_true_ts_true_hoisted_1 = ["href"];
+function SvgIconvue_type_template_id_3a0da814_scoped_true_ts_true_render(_ctx, _cache, $props, $setup, $data, $options) {
   return _ctx.isExternal ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", Object(external_commonjs_vue_commonjs2_vue_root_Vue_["mergeProps"])({
     key: 0,
     style: _ctx.styleExternalIcon,
@@ -87469,9 +87439,9 @@ function SvgIconvue_type_template_id_5fd9571c_scoped_true_ts_true_render(_ctx, _
     "arig-hidden": "true"
   }, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toHandlers"])(_ctx.$attrs, true)), [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("use", {
     href: _ctx.iconName
-  }, null, 8, SvgIconvue_type_template_id_5fd9571c_scoped_true_ts_true_hoisted_1)], 16));
+  }, null, 8, SvgIconvue_type_template_id_3a0da814_scoped_true_ts_true_hoisted_1)], 16));
 }
-// CONCATENATED MODULE: ./src/components/SvgIcon.vue?vue&type=template&id=5fd9571c&scoped=true&ts=true
+// CONCATENATED MODULE: ./src/components/SvgIcon.vue?vue&type=template&id=3a0da814&scoped=true&ts=true
 
 // CONCATENATED MODULE: ./src/utils/index.ts
 // 验证是否外部地址
@@ -87503,7 +87473,6 @@ function copy(text) {
     }
   },
   setup(props) {
-    console.log(props);
     const isExternal = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["computed"])(() => utils_isExternal(props.iconClass));
     const iconName = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["computed"])(() => `#icon-${props.iconClass}`);
     const svgClass = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["computed"])(() => {
@@ -87527,8 +87496,8 @@ function copy(text) {
 }));
 // CONCATENATED MODULE: ./src/components/SvgIcon.vue?vue&type=script&lang=ts
  
-// EXTERNAL MODULE: ./src/components/SvgIcon.vue?vue&type=style&index=0&id=5fd9571c&lang=stylus&scoped=true
-var SvgIconvue_type_style_index_0_id_5fd9571c_lang_stylus_scoped_true = __webpack_require__("8860");
+// EXTERNAL MODULE: ./src/components/SvgIcon.vue?vue&type=style&index=0&id=3a0da814&lang=stylus&scoped=true
+var SvgIconvue_type_style_index_0_id_3a0da814_lang_stylus_scoped_true = __webpack_require__("60d5");
 
 // CONCATENATED MODULE: ./src/components/SvgIcon.vue
 
@@ -87538,7 +87507,7 @@ var SvgIconvue_type_style_index_0_id_5fd9571c_lang_stylus_scoped_true = __webpac
 
 
 
-const SvgIcon_exports_ = /*#__PURE__*/exportHelper_default()(SvgIconvue_type_script_lang_ts, [['render',SvgIconvue_type_template_id_5fd9571c_scoped_true_ts_true_render],['__scopeId',"data-v-5fd9571c"]])
+const SvgIcon_exports_ = /*#__PURE__*/exportHelper_default()(SvgIconvue_type_script_lang_ts, [['render',SvgIconvue_type_template_id_3a0da814_scoped_true_ts_true_render],['__scopeId',"data-v-3a0da814"]])
 
 /* harmony default export */ var SvgIcon = (SvgIcon_exports_);
 // CONCATENATED MODULE: ./node_modules/.store/cache-loader@4.1.0/node_modules/cache-loader/dist/cjs.js??ref--15-0!./node_modules/.store/thread-loader@2.1.3/node_modules/thread-loader/dist/cjs.js!./node_modules/.store/babel-loader@8.3.0/node_modules/babel-loader/lib!./node_modules/.store/ts-loader@6.2.2/node_modules/ts-loader??ref--15-3!./node_modules/.store/cache-loader@4.1.0/node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/.store/vue-loader@16.8.3/node_modules/vue-loader/dist??ref--1-1!./src/components/ComponentGroup.vue?vue&type=script&lang=ts
@@ -92874,24 +92843,24 @@ function ElWidgetFormvue_type_template_id_1e96836d_ts_true_render(_ctx, _cache, 
 }
 // CONCATENATED MODULE: ./src/core/element/ElWidgetForm.vue?vue&type=template&id=1e96836d&ts=true
 
-// CONCATENATED MODULE: ./node_modules/.store/cache-loader@4.1.0/node_modules/cache-loader/dist/cjs.js??ref--15-0!./node_modules/.store/thread-loader@2.1.3/node_modules/thread-loader/dist/cjs.js!./node_modules/.store/babel-loader@8.3.0/node_modules/babel-loader/lib!./node_modules/.store/ts-loader@6.2.2/node_modules/ts-loader??ref--15-3!./node_modules/.store/vue-loader@16.8.3/node_modules/vue-loader/dist/templateLoader.js??ref--7!./node_modules/.store/cache-loader@4.1.0/node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/.store/vue-loader@16.8.3/node_modules/vue-loader/dist??ref--1-1!./src/core/element/ElWidgetFormItem.vue?vue&type=template&id=02a52b0c&ts=true
+// CONCATENATED MODULE: ./node_modules/.store/cache-loader@4.1.0/node_modules/cache-loader/dist/cjs.js??ref--15-0!./node_modules/.store/thread-loader@2.1.3/node_modules/thread-loader/dist/cjs.js!./node_modules/.store/babel-loader@8.3.0/node_modules/babel-loader/lib!./node_modules/.store/ts-loader@6.2.2/node_modules/ts-loader??ref--15-3!./node_modules/.store/vue-loader@16.8.3/node_modules/vue-loader/dist/templateLoader.js??ref--7!./node_modules/.store/cache-loader@4.1.0/node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/.store/vue-loader@16.8.3/node_modules/vue-loader/dist??ref--1-1!./src/core/element/ElWidgetFormItem.vue?vue&type=template&id=380f0c18&ts=true
 
-const ElWidgetFormItemvue_type_template_id_02a52b0c_ts_true_hoisted_1 = {
+const ElWidgetFormItemvue_type_template_id_380f0c18_ts_true_hoisted_1 = {
   class: "widget-item-container"
 };
-const ElWidgetFormItemvue_type_template_id_02a52b0c_ts_true_hoisted_2 = {
+const ElWidgetFormItemvue_type_template_id_380f0c18_ts_true_hoisted_2 = {
   key: 12
 };
-const ElWidgetFormItemvue_type_template_id_02a52b0c_ts_true_hoisted_3 = {
+const ElWidgetFormItemvue_type_template_id_380f0c18_ts_true_hoisted_3 = {
   key: 1,
   class: "widget-view-action"
 };
-const ElWidgetFormItemvue_type_template_id_02a52b0c_ts_true_hoisted_4 = {
+const ElWidgetFormItemvue_type_template_id_380f0c18_ts_true_hoisted_4 = {
   key: 2,
   class: "widget-view-drag"
 };
 const _hoisted_5 = ["src"];
-function ElWidgetFormItemvue_type_template_id_02a52b0c_ts_true_render(_ctx, _cache, $props, $setup, $data, $options) {
+function ElWidgetFormItemvue_type_template_id_380f0c18_ts_true_render(_ctx, _cache, $props, $setup, $data, $options) {
   var _ctx$selectWidget, _ctx$selectWidget2, _ctx$selectWidget3;
   const _component_el_input = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("el-input");
   const _component_el_input_number = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("el-input-number");
@@ -92913,7 +92882,7 @@ function ElWidgetFormItemvue_type_template_id_02a52b0c_ts_true_render(_ctx, _cac
   const _component_el_cascader = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("el-cascader");
   const _component_el_form_item = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("el-form-item");
   const _component_el_dialog = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("el-dialog");
-  return Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", ElWidgetFormItemvue_type_template_id_02a52b0c_ts_true_hoisted_1, [_ctx.element ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])(_component_el_form_item, {
+  return Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", ElWidgetFormItemvue_type_template_id_380f0c18_ts_true_hoisted_1, [_ctx.element ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])(_component_el_form_item, {
     class: Object(external_commonjs_vue_commonjs2_vue_root_Vue_["normalizeClass"])(["widget-view", {
       active: ((_ctx$selectWidget = _ctx.selectWidget) === null || _ctx$selectWidget === void 0 ? void 0 : _ctx$selectWidget.key) === _ctx.element.key
     }]),
@@ -93114,7 +93083,7 @@ function ElWidgetFormItemvue_type_template_id_02a52b0c_ts_true_render(_ctx, _cac
       style: Object(external_commonjs_vue_commonjs2_vue_root_Vue_["normalizeStyle"])({
         width: _ctx.element.options.width
       })
-    }, null, 8, ["modelValue", "min", "max", "step", "range", "disabled", "style"])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), _ctx.element.type == 'text' ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("span", ElWidgetFormItemvue_type_template_id_02a52b0c_ts_true_hoisted_2, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])(_ctx.element.options.defaultValue), 1)) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), _ctx.element.type === 'img-upload' ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])(_component_el_upload, {
+    }, null, 8, ["modelValue", "min", "max", "step", "range", "disabled", "style"])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), _ctx.element.type == 'text' ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("span", ElWidgetFormItemvue_type_template_id_380f0c18_ts_true_hoisted_2, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])(_ctx.element.options.defaultValue), 1)) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), _ctx.element.type === 'img-upload' ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])(_component_el_upload, {
       key: 13,
       name: _ctx.element.options.file,
       action: _ctx.element.options.action,
@@ -93161,13 +93130,13 @@ function ElWidgetFormItemvue_type_template_id_02a52b0c_ts_true_render(_ctx, _cac
       })
     }, null, 8, ["modelValue", "options", "placeholder", "filterable", "clearable", "disabled", "style"])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true)]),
     _: 1
-  }, 8, ["class", "label", "rules"])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), ((_ctx$selectWidget2 = _ctx.selectWidget) === null || _ctx$selectWidget2 === void 0 ? void 0 : _ctx$selectWidget2.key) === _ctx.element.key ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", ElWidgetFormItemvue_type_template_id_02a52b0c_ts_true_hoisted_3, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(_component_SvgIcon, {
+  }, 8, ["class", "label", "rules"])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), ((_ctx$selectWidget2 = _ctx.selectWidget) === null || _ctx$selectWidget2 === void 0 ? void 0 : _ctx$selectWidget2.key) === _ctx.element.key ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", ElWidgetFormItemvue_type_template_id_380f0c18_ts_true_hoisted_3, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(_component_SvgIcon, {
     iconClass: "copy",
     onClick: _cache[0] || (_cache[0] = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["withModifiers"])($event => _ctx.$emit('copy'), ["stop"]))
   }), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(_component_SvgIcon, {
     iconClass: "delete",
     onClick: _cache[1] || (_cache[1] = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["withModifiers"])($event => _ctx.$emit('delete'), ["stop"]))
-  })])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), ((_ctx$selectWidget3 = _ctx.selectWidget) === null || _ctx$selectWidget3 === void 0 ? void 0 : _ctx$selectWidget3.key) === _ctx.element.key ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", ElWidgetFormItemvue_type_template_id_02a52b0c_ts_true_hoisted_4, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(_component_SvgIcon, {
+  })])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), ((_ctx$selectWidget3 = _ctx.selectWidget) === null || _ctx$selectWidget3 === void 0 ? void 0 : _ctx$selectWidget3.key) === _ctx.element.key ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", ElWidgetFormItemvue_type_template_id_380f0c18_ts_true_hoisted_4, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(_component_SvgIcon, {
     iconClass: "move",
     className: "drag-widget"
   })])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(_component_el_dialog, {
@@ -93188,7 +93157,7 @@ function ElWidgetFormItemvue_type_template_id_02a52b0c_ts_true_render(_ctx, _cac
     _: 1
   }, 8, ["modelValue"])]);
 }
-// CONCATENATED MODULE: ./src/core/element/ElWidgetFormItem.vue?vue&type=template&id=02a52b0c&ts=true
+// CONCATENATED MODULE: ./src/core/element/ElWidgetFormItem.vue?vue&type=template&id=380f0c18&ts=true
 
 // CONCATENATED MODULE: ./node_modules/.store/cache-loader@4.1.0/node_modules/cache-loader/dist/cjs.js??ref--15-0!./node_modules/.store/thread-loader@2.1.3/node_modules/thread-loader/dist/cjs.js!./node_modules/.store/babel-loader@8.3.0/node_modules/babel-loader/lib!./node_modules/.store/ts-loader@6.2.2/node_modules/ts-loader??ref--15-3!./node_modules/.store/cache-loader@4.1.0/node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/.store/vue-loader@16.8.3/node_modules/vue-loader/dist??ref--1-1!./src/core/element/ElWidgetFormItem.vue?vue&type=script&lang=ts
 
@@ -93214,14 +93183,28 @@ function ElWidgetFormItemvue_type_template_id_02a52b0c_ts_true_render(_ctx, _cac
     }
   },
   emits: ['copy', 'delete'],
-  setup() {
+  setup(props) {
     const state = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["reactive"])({
       dialogVisible: false,
       url: ''
     });
     const showImage = file => {
-      state.dialogVisible = true;
+      var _props$element;
+      const acceptType = (_props$element = props.element) === null || _props$element === void 0 ? void 0 : _props$element.options.accept;
       state.url = file.url;
+      if (/image/.test(acceptType)) {
+        state.dialogVisible = true;
+      } else {
+        const alink = document.createElement('a');
+        alink.style.display = 'none';
+        alink.download = file.name;
+        alink.href = file.response.url;
+        alink.target = '__blank';
+        document.body.appendChild(alink);
+        alink.click();
+        document.body.removeChild(alink);
+        URL.revokeObjectURL(file.response.url);
+      }
     };
     return {
       showImage,
@@ -93237,7 +93220,7 @@ function ElWidgetFormItemvue_type_template_id_02a52b0c_ts_true_render(_ctx, _cac
 
 
 
-const ElWidgetFormItem_exports_ = /*#__PURE__*/exportHelper_default()(ElWidgetFormItemvue_type_script_lang_ts, [['render',ElWidgetFormItemvue_type_template_id_02a52b0c_ts_true_render]])
+const ElWidgetFormItem_exports_ = /*#__PURE__*/exportHelper_default()(ElWidgetFormItemvue_type_script_lang_ts, [['render',ElWidgetFormItemvue_type_template_id_380f0c18_ts_true_render]])
 
 /* harmony default export */ var ElWidgetFormItem = (ElWidgetFormItem_exports_);
 // CONCATENATED MODULE: ./node_modules/.store/cache-loader@4.1.0/node_modules/cache-loader/dist/cjs.js??ref--15-0!./node_modules/.store/thread-loader@2.1.3/node_modules/thread-loader/dist/cjs.js!./node_modules/.store/babel-loader@8.3.0/node_modules/babel-loader/lib!./node_modules/.store/ts-loader@6.2.2/node_modules/ts-loader??ref--15-3!./node_modules/.store/cache-loader@4.1.0/node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/.store/vue-loader@16.8.3/node_modules/vue-loader/dist??ref--1-1!./src/core/element/ElWidgetForm.vue?vue&type=script&lang=ts
@@ -93434,17 +93417,17 @@ const ElWidgetFormvue_type_script_lang_ts_handleListDelete = (key, list) => {
 const ElWidgetForm_exports_ = /*#__PURE__*/exportHelper_default()(ElWidgetFormvue_type_script_lang_ts, [['render',ElWidgetFormvue_type_template_id_1e96836d_ts_true_render]])
 
 /* harmony default export */ var ElWidgetForm = (ElWidgetForm_exports_);
-// CONCATENATED MODULE: ./node_modules/.store/cache-loader@4.1.0/node_modules/cache-loader/dist/cjs.js??ref--15-0!./node_modules/.store/thread-loader@2.1.3/node_modules/thread-loader/dist/cjs.js!./node_modules/.store/babel-loader@8.3.0/node_modules/babel-loader/lib!./node_modules/.store/ts-loader@6.2.2/node_modules/ts-loader??ref--15-3!./node_modules/.store/vue-loader@16.8.3/node_modules/vue-loader/dist/templateLoader.js??ref--7!./node_modules/.store/cache-loader@4.1.0/node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/.store/vue-loader@16.8.3/node_modules/vue-loader/dist??ref--1-1!./src/core/element/ElGenerateForm.vue?vue&type=template&id=5dd70d95&ts=true
+// CONCATENATED MODULE: ./node_modules/.store/cache-loader@4.1.0/node_modules/cache-loader/dist/cjs.js??ref--15-0!./node_modules/.store/thread-loader@2.1.3/node_modules/thread-loader/dist/cjs.js!./node_modules/.store/babel-loader@8.3.0/node_modules/babel-loader/lib!./node_modules/.store/ts-loader@6.2.2/node_modules/ts-loader??ref--15-3!./node_modules/.store/vue-loader@16.8.3/node_modules/vue-loader/dist/templateLoader.js??ref--7!./node_modules/.store/cache-loader@4.1.0/node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/.store/vue-loader@16.8.3/node_modules/vue-loader/dist??ref--1-1!./src/core/element/ElGenerateForm.vue?vue&type=template&id=07b4b52c&ts=true
 
-const ElGenerateFormvue_type_template_id_5dd70d95_ts_true_hoisted_1 = {
+const ElGenerateFormvue_type_template_id_07b4b52c_ts_true_hoisted_1 = {
   class: "fc-style"
 };
-function ElGenerateFormvue_type_template_id_5dd70d95_ts_true_render(_ctx, _cache, $props, $setup, $data, $options) {
+function ElGenerateFormvue_type_template_id_07b4b52c_ts_true_render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_ElGenerateFormItem = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("ElGenerateFormItem");
   const _component_el_col = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("el-col");
   const _component_el_row = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("el-row");
   const _component_el_form = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("el-form");
-  return Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", ElGenerateFormvue_type_template_id_5dd70d95_ts_true_hoisted_1, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(_component_el_form, {
+  return Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", ElGenerateFormvue_type_template_id_07b4b52c_ts_true_hoisted_1, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(_component_el_form, {
     ref: "generateForm",
     "label-suffix": ":",
     model: _ctx.model,
@@ -93495,15 +93478,15 @@ function ElGenerateFormvue_type_template_id_5dd70d95_ts_true_render(_ctx, _cache
     _: 1
   }, 8, ["model", "rules", "size", "label-position", "label-width", "hide-required-asterisk"])]);
 }
-// CONCATENATED MODULE: ./src/core/element/ElGenerateForm.vue?vue&type=template&id=5dd70d95&ts=true
+// CONCATENATED MODULE: ./src/core/element/ElGenerateForm.vue?vue&type=template&id=07b4b52c&ts=true
 
-// CONCATENATED MODULE: ./node_modules/.store/cache-loader@4.1.0/node_modules/cache-loader/dist/cjs.js??ref--15-0!./node_modules/.store/thread-loader@2.1.3/node_modules/thread-loader/dist/cjs.js!./node_modules/.store/babel-loader@8.3.0/node_modules/babel-loader/lib!./node_modules/.store/ts-loader@6.2.2/node_modules/ts-loader??ref--15-3!./node_modules/.store/vue-loader@16.8.3/node_modules/vue-loader/dist/templateLoader.js??ref--7!./node_modules/.store/cache-loader@4.1.0/node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/.store/vue-loader@16.8.3/node_modules/vue-loader/dist??ref--1-1!./src/core/element/ElGenerateFormItem.vue?vue&type=template&id=933b4f52&ts=true
+// CONCATENATED MODULE: ./node_modules/.store/cache-loader@4.1.0/node_modules/cache-loader/dist/cjs.js??ref--15-0!./node_modules/.store/thread-loader@2.1.3/node_modules/thread-loader/dist/cjs.js!./node_modules/.store/babel-loader@8.3.0/node_modules/babel-loader/lib!./node_modules/.store/ts-loader@6.2.2/node_modules/ts-loader??ref--15-3!./node_modules/.store/vue-loader@16.8.3/node_modules/vue-loader/dist/templateLoader.js??ref--7!./node_modules/.store/cache-loader@4.1.0/node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/.store/vue-loader@16.8.3/node_modules/vue-loader/dist??ref--1-1!./src/core/element/ElGenerateFormItem.vue?vue&type=template&id=86447894&ts=true
 
-const ElGenerateFormItemvue_type_template_id_933b4f52_ts_true_hoisted_1 = {
+const ElGenerateFormItemvue_type_template_id_86447894_ts_true_hoisted_1 = {
   key: 12
 };
-const ElGenerateFormItemvue_type_template_id_933b4f52_ts_true_hoisted_2 = ["src"];
-function ElGenerateFormItemvue_type_template_id_933b4f52_ts_true_render(_ctx, _cache, $props, $setup, $data, $options) {
+const ElGenerateFormItemvue_type_template_id_86447894_ts_true_hoisted_2 = ["src"];
+function ElGenerateFormItemvue_type_template_id_86447894_ts_true_render(_ctx, _cache, $props, $setup, $data, $options) {
   var _ctx$element$options;
   const _component_el_input = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("el-input");
   const _component_el_input_number = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("el-input-number");
@@ -93737,7 +93720,7 @@ function ElGenerateFormItemvue_type_template_id_933b4f52_ts_true_render(_ctx, _c
       style: Object(external_commonjs_vue_commonjs2_vue_root_Vue_["normalizeStyle"])({
         width: _ctx.element.options.width
       })
-    }, null, 8, ["modelValue", "min", "max", "step", "range", "disabled", "style"])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), _ctx.element.type === 'text' ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("span", ElGenerateFormItemvue_type_template_id_933b4f52_ts_true_hoisted_1, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])(_ctx.element.options.defaultValue), 1)) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), _ctx.element.type === 'img-upload' ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])(_component_el_upload, {
+    }, null, 8, ["modelValue", "min", "max", "step", "range", "disabled", "style"])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), _ctx.element.type === 'text' ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("span", ElGenerateFormItemvue_type_template_id_86447894_ts_true_hoisted_1, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])(_ctx.element.options.defaultValue), 1)) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), _ctx.element.type === 'img-upload' ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])(_component_el_upload, {
       key: 13,
       name: _ctx.element.options.file,
       action: _ctx.element.options.action,
@@ -93799,13 +93782,13 @@ function ElGenerateFormItemvue_type_template_id_933b4f52_ts_true_render(_ctx, _c
           "max-width": "100%",
           "max-height": "100%"
         }
-      }, null, 8, ElGenerateFormItemvue_type_template_id_933b4f52_ts_true_hoisted_2)]),
+      }, null, 8, ElGenerateFormItemvue_type_template_id_86447894_ts_true_hoisted_2)]),
       _: 1
     }, 8, ["modelValue"])]),
     _: 1
   }, 8, ["label", "prop"])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true);
 }
-// CONCATENATED MODULE: ./src/core/element/ElGenerateFormItem.vue?vue&type=template&id=933b4f52&ts=true
+// CONCATENATED MODULE: ./src/core/element/ElGenerateFormItem.vue?vue&type=template&id=86447894&ts=true
 
 // CONCATENATED MODULE: ./node_modules/.store/cache-loader@4.1.0/node_modules/cache-loader/dist/cjs.js??ref--15-0!./node_modules/.store/thread-loader@2.1.3/node_modules/thread-loader/dist/cjs.js!./node_modules/.store/babel-loader@8.3.0/node_modules/babel-loader/lib!./node_modules/.store/ts-loader@6.2.2/node_modules/ts-loader??ref--15-3!./node_modules/.store/cache-loader@4.1.0/node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/.store/vue-loader@16.8.3/node_modules/vue-loader/dist??ref--1-1!./src/core/element/ElGenerateFormItem.vue?vue&type=script&lang=ts
 
@@ -93843,25 +93826,40 @@ function ElGenerateFormItemvue_type_template_id_933b4f52_ts_true_render(_ctx, _c
         props.model[props.element.model] = val;
       }
     });
+    const alink = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["ref"])(null);
     const state = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["reactive"])({
       dialogVisible: false,
       url: ''
     });
-    console.log(props.element);
     const handleFilterOption = (input, option) => option.label.toLowerCase().includes(input);
     const handleUploadSuccess = (_res, _file, fileList) => {
       data.value = fileList;
     };
     const showImage = file => {
-      state.dialogVisible = true;
+      var _props$element;
+      const acceptType = (_props$element = props.element) === null || _props$element === void 0 ? void 0 : _props$element.options.accept;
       state.url = file.url;
+      if (/image/.test(acceptType)) {
+        state.dialogVisible = true;
+      } else {
+        const alink = document.createElement('a');
+        alink.style.display = 'none';
+        alink.download = file.name;
+        alink.href = file.response.url;
+        alink.target = '__blank';
+        document.body.appendChild(alink);
+        alink.click();
+        document.body.removeChild(alink);
+        URL.revokeObjectURL(file.response.url);
+      }
     };
     return {
       data,
       handleFilterOption,
       handleUploadSuccess,
       showImage,
-      ...Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toRefs"])(state)
+      ...Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toRefs"])(state),
+      alink
     };
   }
 }));
@@ -93873,7 +93871,7 @@ function ElGenerateFormItemvue_type_template_id_933b4f52_ts_true_render(_ctx, _c
 
 
 
-const ElGenerateFormItem_exports_ = /*#__PURE__*/exportHelper_default()(ElGenerateFormItemvue_type_script_lang_ts, [['render',ElGenerateFormItemvue_type_template_id_933b4f52_ts_true_render]])
+const ElGenerateFormItem_exports_ = /*#__PURE__*/exportHelper_default()(ElGenerateFormItemvue_type_script_lang_ts, [['render',ElGenerateFormItemvue_type_template_id_86447894_ts_true_render]])
 
 /* harmony default export */ var ElGenerateFormItem = (ElGenerateFormItem_exports_);
 // CONCATENATED MODULE: ./node_modules/.store/cache-loader@4.1.0/node_modules/cache-loader/dist/cjs.js??ref--15-0!./node_modules/.store/thread-loader@2.1.3/node_modules/thread-loader/dist/cjs.js!./node_modules/.store/babel-loader@8.3.0/node_modules/babel-loader/lib!./node_modules/.store/ts-loader@6.2.2/node_modules/ts-loader??ref--15-3!./node_modules/.store/cache-loader@4.1.0/node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/.store/vue-loader@16.8.3/node_modules/vue-loader/dist??ref--1-1!./src/core/element/ElGenerateForm.vue?vue&type=script&lang=ts
@@ -93907,7 +93905,6 @@ const ElGenerateFormItem_exports_ = /*#__PURE__*/exportHelper_default()(ElGenera
       rules: {},
       widgetForm: (_ref = props.data && JSON.parse(JSON.stringify(props.data))) !== null && _ref !== void 0 ? _ref : element_namespaceObject.widgetForm
     });
-    console.log(state.widgetForm);
     const generateModel = list => {
       for (let index = 0; index < list.length; index++) {
         const model = list[index].model;
@@ -93992,7 +93989,7 @@ const ElGenerateFormItem_exports_ = /*#__PURE__*/exportHelper_default()(ElGenera
 
 
 
-const ElGenerateForm_exports_ = /*#__PURE__*/exportHelper_default()(ElGenerateFormvue_type_script_lang_ts, [['render',ElGenerateFormvue_type_template_id_5dd70d95_ts_true_render]])
+const ElGenerateForm_exports_ = /*#__PURE__*/exportHelper_default()(ElGenerateFormvue_type_script_lang_ts, [['render',ElGenerateFormvue_type_template_id_07b4b52c_ts_true_render]])
 
 /* harmony default export */ var ElGenerateForm = (ElGenerateForm_exports_);
 // CONCATENATED MODULE: ./node_modules/.store/cache-loader@4.1.0/node_modules/cache-loader/dist/cjs.js??ref--15-0!./node_modules/.store/thread-loader@2.1.3/node_modules/thread-loader/dist/cjs.js!./node_modules/.store/babel-loader@8.3.0/node_modules/babel-loader/lib!./node_modules/.store/ts-loader@6.2.2/node_modules/ts-loader??ref--15-3!./node_modules/.store/vue-loader@16.8.3/node_modules/vue-loader/dist/templateLoader.js??ref--7!./node_modules/.store/cache-loader@4.1.0/node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/.store/vue-loader@16.8.3/node_modules/vue-loader/dist??ref--1-1!./src/core/element/ElWidgetConfig.vue?vue&type=template&id=02066eaa&ts=true
@@ -101116,6 +101113,20 @@ module.exports = function (target, source, exceptions) {
 
 /***/ }),
 
+/***/ "d13f":
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__("5acd");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".svg-icon[data-v-3a0da814]{width:1em;height:1em;vertical-align:-.15em;fill:currentColor;overflow:hidden}.svg-external-icon[data-v-3a0da814]{background-color:currentColor;-webkit-mask-size:cover!important;mask-size:cover!important;display:inline-block}", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ "d3ae":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -101677,6 +101688,22 @@ var symbol = new _node_modules_store_svg_baker_runtime_1_4_7_node_modules_svg_ba
 });
 var result = _node_modules_store_svg_sprite_loader_6_0_11_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default.a.add(symbol);
 /* harmony default export */ __webpack_exports__["default"] = (symbol);
+
+/***/ }),
+
+/***/ "efe1":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("d13f");
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__("c9a2").default
+var update = add("64bb67a6", content, true, {"sourceMap":false,"shadowMode":false});
 
 /***/ }),
 
