@@ -130,8 +130,8 @@
         :filterable="element.options.filterable" :clearable="element.options.clearable"
         :disabled="disabled || element.options.disabled" :style="{ width: element.options.width }" />
     </template>
-    <el-dialog v-model="dialogVisible">
-      <img w-full :src="url" alt="Preview Image" />
+    <el-dialog v-model="dialogVisible" width="50%" height="50%">
+      <img w-full :src="url" alt="Preview Image" style="max-width:100%;max-height:100%"/>
     </el-dialog>
   </el-form-item>
 </template>
