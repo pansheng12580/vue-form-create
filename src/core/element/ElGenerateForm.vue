@@ -55,7 +55,7 @@ export default defineComponent({
         element.widgetForm
     })
 
-    const { proxy } = getCurrentInstance() as any;
+    const { proxy } = getCurrentInstance() as any
 
     const generateModel = (list: any[]) => {
       for (let index = 0; index < list.length; index++) {
@@ -73,14 +73,12 @@ export default defineComponent({
           }
 
           state.rules[model] = list[index].options.rules
-          console.log(state.rules);
         }
       }
     }
 
-
     function checkForm() {
-      proxy.$refs["generateForm"].validate((valid: any) => {
+      proxy.$refs['generateForm'].validate((valid: any) => {
         if (valid) {
           return true
         } else {
