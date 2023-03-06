@@ -1,49 +1,20 @@
 <template>
   <div class="fc-style">
-    <el-form
-      ref="generateForm"
-      label-suffix=":"
-      :model="model"
-      :rules="rules"
-      :size="widgetForm.config.size"
-      :label-position="widgetForm.config.labelPosition"
-      :label-width="`${widgetForm.config.labelWidth}px`"
-      :hide-required-asterisk="widgetForm.config.hideRequiredAsterisk"
-    >
+    <el-form ref="generateForm" label-suffix=":" :model="model" :rules="rules" :size="widgetForm.config.size"
+      :label-position="widgetForm.config.labelPosition" :label-width="`${widgetForm.config.labelWidth}px`"
+      :hide-required-asterisk="widgetForm.config.hideRequiredAsterisk">
       <template v-for="(element, index) of widgetForm.list">
         <template v-if="element.type === 'grid'">
-          <el-row
-            type="flex"
-            v-if="element.key"
-            :key="element.key"
-            :gutter="element.options.gutter ?? 0"
-            :justify="element.options.justify"
-            :align="element.options.align"
-          >
-            <el-col
-              v-for="(col, colIndex) of element.columns"
-              :key="colIndex"
-              :span="col.span ?? 0"
-            >
-              <ElGenerateFormItem
-                v-for="colItem of col.list"
-                :model="model"
-                :key="colItem.key"
-                :element="colItem"
-                :config="data.config"
-                :disabled="disabled"
-              />
+          <el-row type="flex" v-if="element.key" :key="element.key" :gutter="element.options.gutter ?? 0"
+            :justify="element.options.justify" :align="element.options.align">
+            <el-col v-for="(col, colIndex) of element.columns" :key="colIndex" :span="col.span ?? 0">
+              <ElGenerateFormItem v-for="colItem of col.list" :model="model" :key="colItem.key" :element="colItem"
+                :config="data.config" :disabled="disabled" />
             </el-col>
           </el-row>
         </template>
-        <ElGenerateFormItem
-          v-else
-          :model="model"
-          :key="element.key"
-          :element="widgetForm.list[index]"
-          :config="data.config"
-          :disabled="disabled"
-        />
+        <ElGenerateFormItem v-else :model="model" :key="element.key" :element="widgetForm.list[index]"
+          :config="data.config" :disabled="disabled" />
       </template>
     </el-form>
   </div>
@@ -54,6 +25,7 @@ import { defineComponent, onMounted, reactive, toRefs, watch } from 'vue'
 import { ElMessage } from 'element-plus'
 import ElGenerateFormItem from './ElGenerateFormItem.vue'
 import { element } from '@/config'
+import { getCurrentInstance } from 'vue'
 
 export default defineComponent({
   name: 'ElGenerateForm',
@@ -83,6 +55,8 @@ export default defineComponent({
         element.widgetForm
     })
 
+    const { proxy } = getCurrentInstance() as any;
+
     const generateModel = (list: any[]) => {
       for (let index = 0; index < list.length; index++) {
         const model = list[index].model
@@ -99,8 +73,20 @@ export default defineComponent({
           }
 
           state.rules[model] = list[index].options.rules
+          console.log(state.rules);
         }
       }
+    }
+
+
+    function checkForm() {
+      proxy.$refs["generateForm"].validate((valid: any) => {
+        if (valid) {
+          return true
+        } else {
+          return false
+        }
+      })
     }
 
     const generateOptions = (list: any[]) => {
