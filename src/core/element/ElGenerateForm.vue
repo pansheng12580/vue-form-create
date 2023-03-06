@@ -78,13 +78,15 @@ export default defineComponent({
     }
 
     function checkForm() {
+      let flag = false
       proxy.$refs['generateForm'].validate((valid: any) => {
         if (valid) {
-          return true
+          flag = true
         } else {
-          return false
+          flag = false
         }
       })
+      return flag
     }
 
     const generateOptions = (list: any[]) => {
