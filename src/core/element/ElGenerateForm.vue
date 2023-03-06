@@ -86,6 +86,7 @@ export default defineComponent({
           flag = false
         }
       })
+      console.log(flag, 111)
       return flag
     }
 
