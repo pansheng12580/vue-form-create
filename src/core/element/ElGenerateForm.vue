@@ -72,7 +72,8 @@ export default defineComponent({
             state.model[model] = list[index].options.defaultValue
           }
 
-          state.rules[model] = list[index].options.rules
+          state.rules[model] = [list[index].options.rules]
+          console.log(state.rules)
         }
       }
     }
@@ -86,7 +87,6 @@ export default defineComponent({
           flag = false
         }
       })
-      console.log(flag, 111)
       return flag
     }
 

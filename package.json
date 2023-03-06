@@ -1,5 +1,5 @@
 {
-  "name": "vue-form-create",
+  "name": "zhihui-vue-form-create",
   "description": "一个基于Vue3.0 + TS 的表单设计器",
   "version": "1.2.19",
   "main": "dist/formCreate.umd.min.js",
