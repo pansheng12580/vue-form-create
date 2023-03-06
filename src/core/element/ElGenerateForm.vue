@@ -153,7 +153,8 @@ export default defineComponent({
     return {
       ...toRefs(state),
       getData,
-      reset
+      reset,
+      checkForm
     }
   }
 })
