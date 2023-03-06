@@ -65,6 +65,7 @@ export default defineComponent({
         }
         if (list[index].type === 'grid') {
           list[index].columns.forEach((col: any) => generateModel(col.list))
+          console.log(111)
         } else {
           if (props.value && Object.keys(props.value).includes(model)) {
             state.model[model] = props.value[model]
@@ -80,11 +81,15 @@ export default defineComponent({
 
     function checkForm() {
       let flag = false
+      console.log('test')
       proxy.$refs['generateForm'].validate((valid: any) => {
+
         if (valid) {
           flag = true
+          console.log('success')
         } else {
           flag = false
+          console.log('error')
         }
       })
       return flag

@@ -106193,17 +106193,17 @@ const ElWidgetFormvue_type_script_lang_ts_handleListDelete = (key, list) => {
 const ElWidgetForm_exports_ = /*#__PURE__*/exportHelper_default()(ElWidgetFormvue_type_script_lang_ts, [['render',ElWidgetFormvue_type_template_id_1e96836d_ts_true_render]])
 
 /* harmony default export */ var ElWidgetForm = (ElWidgetForm_exports_);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--15-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/ts-loader??ref--15-3!./node_modules/vue-loader-v16/dist/templateLoader.js??ref--7!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader-v16/dist??ref--1-1!./src/core/element/ElGenerateForm.vue?vue&type=template&id=204334c6&ts=true
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--15-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/ts-loader??ref--15-3!./node_modules/vue-loader-v16/dist/templateLoader.js??ref--7!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader-v16/dist??ref--1-1!./src/core/element/ElGenerateForm.vue?vue&type=template&id=453017b6&ts=true
 
-const ElGenerateFormvue_type_template_id_204334c6_ts_true_hoisted_1 = {
+const ElGenerateFormvue_type_template_id_453017b6_ts_true_hoisted_1 = {
   class: "fc-style"
 };
-function ElGenerateFormvue_type_template_id_204334c6_ts_true_render(_ctx, _cache, $props, $setup, $data, $options) {
+function ElGenerateFormvue_type_template_id_453017b6_ts_true_render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_ElGenerateFormItem = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("ElGenerateFormItem");
   const _component_el_col = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("el-col");
   const _component_el_row = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("el-row");
   const _component_el_form = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("el-form");
-  return Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", ElGenerateFormvue_type_template_id_204334c6_ts_true_hoisted_1, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(_component_el_form, {
+  return Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", ElGenerateFormvue_type_template_id_453017b6_ts_true_hoisted_1, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(_component_el_form, {
     ref: "generateForm",
     "label-suffix": ":",
     model: _ctx.model,
@@ -106254,7 +106254,7 @@ function ElGenerateFormvue_type_template_id_204334c6_ts_true_render(_ctx, _cache
     _: 1
   }, 8, ["model", "rules", "size", "label-position", "label-width", "hide-required-asterisk"])]);
 }
-// CONCATENATED MODULE: ./src/core/element/ElGenerateForm.vue?vue&type=template&id=204334c6&ts=true
+// CONCATENATED MODULE: ./src/core/element/ElGenerateForm.vue?vue&type=template&id=453017b6&ts=true
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--15-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/ts-loader??ref--15-3!./node_modules/vue-loader-v16/dist/templateLoader.js??ref--7!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader-v16/dist??ref--1-1!./src/core/element/ElGenerateFormItem.vue?vue&type=template&id=86447894&ts=true
 
@@ -106693,6 +106693,7 @@ const ElGenerateFormItem_exports_ = /*#__PURE__*/exportHelper_default()(ElGenera
         }
         if (list[index].type === 'grid') {
           list[index].columns.forEach(col => generateModel(col.list));
+          console.log(111);
         } else {
           if (props.value && Object.keys(props.value).includes(model)) {
             state.model[model] = props.value[model];
@@ -106706,11 +106707,14 @@ const ElGenerateFormItem_exports_ = /*#__PURE__*/exportHelper_default()(ElGenera
     };
     function checkForm() {
       let flag = false;
+      console.log('test');
       proxy.$refs['generateForm'].validate(valid => {
         if (valid) {
           flag = true;
+          console.log('success');
         } else {
           flag = false;
+          console.log('error');
         }
       });
       return flag;
@@ -106782,7 +106786,7 @@ const ElGenerateFormItem_exports_ = /*#__PURE__*/exportHelper_default()(ElGenera
 
 
 
-const ElGenerateForm_exports_ = /*#__PURE__*/exportHelper_default()(ElGenerateFormvue_type_script_lang_ts, [['render',ElGenerateFormvue_type_template_id_204334c6_ts_true_render]])
+const ElGenerateForm_exports_ = /*#__PURE__*/exportHelper_default()(ElGenerateFormvue_type_script_lang_ts, [['render',ElGenerateFormvue_type_template_id_453017b6_ts_true_render]])
 
 /* harmony default export */ var ElGenerateForm = (ElGenerateForm_exports_);
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--15-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/ts-loader??ref--15-3!./node_modules/vue-loader-v16/dist/templateLoader.js??ref--7!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader-v16/dist??ref--1-1!./src/core/element/ElWidgetConfig.vue?vue&type=template&id=02066eaa&ts=true
