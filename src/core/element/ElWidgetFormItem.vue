@@ -190,7 +190,7 @@ export default defineComponent({
 
     const showImage = (file: any) => {
       const acceptType = props.element?.options.accept
-      state.url = file.url
+      state.url = file.url?.replace('puji.erp.bmbdo.com', '123.60.50.88:14490')
       if (/image/.test(acceptType)) {
         state.dialogVisible = true
       } else {
