@@ -194,6 +194,8 @@ export default defineComponent({
 
     const showImage = (file: any) => {
       const acceptType = props.element?.options.accept
+      console.log('file.url:' + file.url)
+
       state.url = file.url
       if (/image/.test(acceptType)) {
         state.dialogVisible = true
