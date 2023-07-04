@@ -188,7 +188,8 @@ export default defineComponent({
       dataJsonTemplate: '',
       dataCodeTemplate: '',
       codeLanguage: CodeType.Vue,
-      jsonEg: JSON.stringify(element.widgetForm, null, 2)
+      jsonEg: JSON.stringify(element.widgetForm, null, 2),
+
     })
 
     const handleUploadJson = () => {

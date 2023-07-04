@@ -73,13 +73,14 @@ export default defineComponent({
           }
 
           state.rules[model] = [list[index].options.rules]
+          console.log(state.rules);
         }
       }
     }
 
     function checkForm() {
       let flag = false
-      proxy.$refs['generateForm'].validate((valid: any) => {
+      proxy.$refs['generateForm'].validate((valid: boolean) => {
         console.log(proxy.$refs['generateForm'], proxy.$refs['generateForm'].validate)
 
         if (valid) {
