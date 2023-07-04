@@ -201,12 +201,15 @@ export default defineComponent({
         const alink = document.createElement('a')
         alink.style.display = 'none'
         alink.download = file.name
-        alink.href = file.response.url
+        alink.href = file.response.url?.replace('puji.erp.bmbdo.com', '123.60.50.88:14490')
+        console.log('file.response.url:' + file.response.url)
+        console.log('alink.href:' + alink.href)
+
         alink.target = '__blank'
         document.body.appendChild(alink)
         alink.click()
         document.body.removeChild(alink)
-        URL.revokeObjectURL(file.response.url)
+        URL.revokeObjectURL(file.response.url?.replace('puji.erp.bmbdo.com', '123.60.50.88:14490'))
       }
     }
 
